@@ -1,0 +1,57 @@
+
+[
+  {
+    "codigo": "sa-east-1",
+    "nome": "South America (São Paulo)",
+    "cidade": "São Paulo",
+    "pais": "Brasil",
+    "continente": "América do Sul",
+    "latitude": -23.5505,
+    "longitude": -46.6333
+  },
+  {
+    "codigo": "us-east-1",
+    "nome": "US East (N. Virginia)",
+    "cidade": "Northern Virginia",
+    "pais": "Estados Unidos",
+    "continente": "América do Norte",
+    "latitude": 38.8048,
+    "longitude": -77.0469
+  },
+  {
+    "codigo": "us-west-2",
+    "nome": "US West (Oregon)",
+    "cidade": "Oregon",
+    "pais": "Estados Unidos",
+    "continente": "América do Norte",
+    "latitude": 45.5152,
+    "longitude": -122.6784
+  },
+  {
+    "codigo": "eu-west-1",
+    "nome": "Europe (Ireland)",
+    "cidade": "Dublin",
+    "pais": "Irlanda",
+    "continente": "Europa",
+    "latitude": 53.3498,
+    "longitude": -6.2603
+  },
+  {
+    "codigo": "ap-northeast-1",
+    "nome": "Asia Pacific (Tokyo)",
+    "cidade": "Tokyo",
+    "pais": "Japão",
+    "continente": "Ásia",
+    "latitude": 35.6762,
+    "longitude": 139.6503
+  },
+  {
+    "codigo": "af-south-1",
+    "nome": "Africa (Cape Town)",
+    "cidade": "Cape Town",
+    "pais": "África do Sul",
+    "continente": "África",
+    "latitude": -33.9249,
+    "longitude": 18.4241
+  }
+]

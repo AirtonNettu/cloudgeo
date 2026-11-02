@@ -1,0 +1,59 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #f8fafc;
+  background: #0f172a;
+}
+
+header {
+  padding: 22px;
+  background: #111827;
+  border-bottom: 2px solid #ff9900;
+}
+
+h1 {
+  margin: 0;
+  color: #ff9900;
+}
+
+header p {
+  color: #cbd5e1;
+}
+
+main {
+  padding: 20px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.controles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+input, select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #475569;
+  font-size: 15px;
+}
+
+#mapa {
+  width: 100%;
+  height: 65vh;
+  min-height: 400px;
+  border-radius: 12px;
+}
+
+footer {
+  padding: 16px;
+  text-align: center;
+  color: #94a3b8;
+}

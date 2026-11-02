@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CloudGeo | AWS Regions Explorer</title>
+
+  <link rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>☁️ CloudGeo</h1>
+    <p>Explore a infraestrutura global da AWS</p>
+  </header>
+
+  <main>
+    <section class="controles">
+      <label for="busca">Buscar região</label>
+      <input id="busca" type="search"
+        placeholder="Ex.: São Paulo, Tokyo, us-east-1">
+
+      <label for="continente">Continente</label>
+      <select id="continente">
+        <option value="">Todos</option>
+      </select>
+
+      <p id="contador" aria-live="polite"></p>
+    </section>
+
+    <div id="mapa" aria-label="Mapa das regiões AWS"></div>
+  </main>
+
+  <footer>
+    Localizações aproximadas para fins educativos.
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
