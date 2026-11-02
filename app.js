@@ -247,3 +247,8 @@ continente.addEventListener(
 // ==================================================
 
 inicializar();
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    mapa.invalidateSize();
+  }, 300);
+});
