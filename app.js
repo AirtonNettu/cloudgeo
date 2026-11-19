@@ -145,7 +145,11 @@ function mostrarDetalhes(ponto) {
 
   if (ponto.tipo === "regiao") {
     tagCategoria.classList.add("tag-regiao");
-    tagCategoria.textContent = "Região AWS";
+    tagCategoria.textContent = ponto.tipoRegiao === "AWS GovCloud"
+      ? "AWS GovCloud"
+      : ponto.tipoRegiao === "AWS China"
+      ? "AWS China"
+      : "Região AWS";
   } else if (ponto.tipo === "local_zone") {
     tagCategoria.classList.add("tag-localzone");
     tagCategoria.textContent = "AWS Local Zone";
@@ -165,9 +169,14 @@ function mostrarDetalhes(ponto) {
 
   if (ponto.tipo === "regiao") {
     informacoes.push(["Código da Região", ponto.codigo]);
+    informacoes.push(["Tipo de Região", ponto.tipoRegiao || "Comercial Padrão"]);
+    informacoes.push(["Partição AWS", ponto.particao || "aws"]);
     informacoes.push(["Cidade Principal", ponto.cidade]);
     informacoes.push(["País", ponto.pais]);
     informacoes.push(["Continente", ponto.continente]);
+    if (ponto.operador && ponto.operador !== "Amazon Web Services (AWS)") {
+      informacoes.push(["Operador Autorizado", ponto.operador]);
+    }
     if (ponto.zonasDisponibilidade) {
       informacoes.push(["Zonas de Disponibilidade", `${ponto.zonasDisponibilidade} AZs`]);
     }
@@ -181,8 +190,8 @@ function mostrarDetalhes(ponto) {
     informacoes.push(["Continente", ponto.continente]);
     informacoes.push(["Região Pai (Parent)", `${ponto.regiaoPaiNome || ponto.regiaoPai} (${ponto.regiaoPai})`]);
   } else {
-    informacoes.push(["Tipo de Borda", "Point of Presence (Edge Location)"]);
-    informacoes.push(["Cidade", ponto.cidade]);
+    informacoes.push(["Tipo de Infraestrutura", "Point of Presence (Cidade com PoP)"]);
+    informacoes.push(["Cidade Sede Catalogada", ponto.cidade]);
     informacoes.push(["País", ponto.pais]);
     informacoes.push(["Continente", ponto.continente]);
     informacoes.push(["Serviços Principais", "Amazon CloudFront & Route 53"]);
@@ -214,14 +223,18 @@ function mostrarDetalhes(ponto) {
   descricao.className = "detalhes-descricao";
 
   if (ponto.tipo === "regiao") {
-    descricao.textContent =
-      "Uma Região AWS é uma área geográfica isolada composta por múltiplos data centers redundantes agrupados em Zonas de Disponibilidade (AZs). Projetada para fornecer alta disponibilidade, tolerância a falhas e residência de dados completa.";
+    if (ponto.descricaoEscopo) {
+      descricao.textContent = ponto.descricaoEscopo;
+    } else {
+      descricao.textContent =
+        "Uma Região AWS Comercial Padrão é uma área geográfica isolada composta por múltiplos data centers redundantes agrupados em Zonas de Disponibilidade (AZs). Projetada para fornecer alta disponibilidade, tolerância a falhas e residência de dados completa.";
+    }
   } else if (ponto.tipo === "local_zone") {
     descricao.textContent =
       `Uma AWS Local Zone é uma extensão que aproxima serviços de computação e armazenamento de centros metropolitanos sem Região AWS dedicada. Seu plano de controle está ancorado na região ${ponto.regiaoPai}, fornecendo latência de um dígito em milissegundos (< 10 ms).`;
   } else {
     descricao.textContent =
-      "Um Ponto de Presença (PoP) CloudFront faz parte da rede de borda global da AWS. Executa cache inteligente de dados, terminação TLS acelerada e resolução DNS (Route 53), reduzindo a latência para os clientes finais com segurança perimetral (AWS Shield).";
+      "Esta entrada cataloga a cidade sede oficial de Points of Presence (PoPs) do Amazon CloudFront. Metrópoles de alta demanda física abrigam múltiplos PoPs e Regional Edge Caches simultâneos, reduzindo latência para usuários finais via CDN e DNS Route 53 com mitigação DDoS integrada.";
   }
 
   detalhesRegiao.appendChild(descricao);
@@ -251,13 +264,17 @@ function criarPainelPopup(ponto) {
 
   if (ponto.tipo === "regiao") {
     tag.classList.add("tag-regiao");
-    tag.textContent = "Região AWS";
+    tag.textContent = ponto.tipoRegiao === "AWS GovCloud"
+      ? "AWS GovCloud"
+      : ponto.tipoRegiao === "AWS China"
+      ? "AWS China"
+      : "Região AWS";
   } else if (ponto.tipo === "local_zone") {
     tag.classList.add("tag-localzone");
     tag.textContent = "Local Zone";
   } else {
     tag.classList.add("tag-cloudfront");
-    tag.textContent = "CloudFront PoP";
+    tag.textContent = "CloudFront (Cidade)";
   }
 
   const titulo = document.createElement("div");
@@ -268,7 +285,7 @@ function criarPainelPopup(ponto) {
   detalhes.className = "popup-detalhe";
 
   if (ponto.tipo === "regiao") {
-    detalhes.textContent = `${ponto.codigo} · ${ponto.cidade}, ${ponto.pais}`;
+    detalhes.textContent = `${ponto.codigo} · ${ponto.cidade}, ${ponto.pais} (${ponto.tipoRegiao || "Comercial"})`;
   } else if (ponto.tipo === "local_zone") {
     detalhes.textContent = `${ponto.codigo} · Região Pai: ${ponto.regiaoPai}`;
   } else {
@@ -317,7 +334,10 @@ function renderizarPontos() {
         ponto.pais || "",
         ponto.continente || "",
         ponto.regiaoPai || "",
-        ponto.regiaoPaiNome || ""
+        ponto.regiaoPaiNome || "",
+        ponto.tipoRegiao || "",
+        ponto.particao || "",
+        ponto.operador || ""
       ];
 
       const combinaBusca = camposBusca.some(campo =>
@@ -364,7 +384,7 @@ function renderizarPontos() {
     contador.textContent = "Nenhum ponto de infraestrutura encontrado para os filtros atuais.";
   } else {
     contador.textContent =
-      `Exibindo ${filtrados.length} pontos: ${contRegioesVisiveis} Regiões, ${contLocalZonesVisiveis} Local Zones e ${contCloudfrontVisiveis} CloudFront PoPs.`;
+      `Exibindo ${filtrados.length} pontos no mapa: ${contRegioesVisiveis} Regiões AWS, ${contLocalZonesVisiveis} Local Zones e ${contCloudfrontVisiveis} cidades com CloudFront PoPs.`;
   }
 
   // Ajusta limites do mapa se houver busca específica ou filtro ativo

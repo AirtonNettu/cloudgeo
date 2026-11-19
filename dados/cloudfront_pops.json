@@ -848,7 +848,7 @@
   {
     "cidade": "Abu Dhabi",
     "pais": "Emirados Árabes Unidos",
-    "continente": "Oriente Médio",
+    "continente": "Ásia",
     "latitude": 24.4539,
     "longitude": 54.3773,
     "tipo": "cloudfront_pop",
@@ -866,7 +866,7 @@
   {
     "cidade": "Doha",
     "pais": "Catar",
-    "continente": "Oriente Médio",
+    "continente": "Ásia",
     "latitude": 25.2854,
     "longitude": 51.531,
     "tipo": "cloudfront_pop",
@@ -875,7 +875,7 @@
   {
     "cidade": "Dubai",
     "pais": "Emirados Árabes Unidos",
-    "continente": "Oriente Médio",
+    "continente": "Ásia",
     "latitude": 25.2048,
     "longitude": 55.2708,
     "tipo": "cloudfront_pop",
@@ -884,7 +884,7 @@
   {
     "cidade": "Fujairah",
     "pais": "Emirados Árabes Unidos",
-    "continente": "Oriente Médio",
+    "continente": "Ásia",
     "latitude": 25.1288,
     "longitude": 56.3265,
     "tipo": "cloudfront_pop",
@@ -893,7 +893,7 @@
   {
     "cidade": "Istambul",
     "pais": "Turquia",
-    "continente": "Oriente Médio",
+    "continente": "Ásia",
     "latitude": 41.0082,
     "longitude": 28.9784,
     "tipo": "cloudfront_pop",
@@ -902,7 +902,7 @@
   {
     "cidade": "Jeddah",
     "pais": "Arábia Saudita",
-    "continente": "Oriente Médio",
+    "continente": "Ásia",
     "latitude": 21.5433,
     "longitude": 39.1728,
     "tipo": "cloudfront_pop",
@@ -929,7 +929,7 @@
   {
     "cidade": "Manama",
     "pais": "Bahrein",
-    "continente": "Oriente Médio",
+    "continente": "Ásia",
     "latitude": 26.2285,
     "longitude": 50.586,
     "tipo": "cloudfront_pop",
@@ -938,7 +938,7 @@
   {
     "cidade": "Mascate",
     "pais": "Omã",
-    "continente": "Oriente Médio",
+    "continente": "Ásia",
     "latitude": 23.588,
     "longitude": 58.3829,
     "tipo": "cloudfront_pop",
@@ -956,7 +956,7 @@
   {
     "cidade": "Riad",
     "pais": "Arábia Saudita",
-    "continente": "Oriente Médio",
+    "continente": "Ásia",
     "latitude": 24.7136,
     "longitude": 46.6753,
     "tipo": "cloudfront_pop",
@@ -965,7 +965,7 @@
   {
     "cidade": "Tel Aviv",
     "pais": "Israel",
-    "continente": "Oriente Médio",
+    "continente": "Ásia",
     "latitude": 32.0853,
     "longitude": 34.7818,
     "tipo": "cloudfront_pop",
