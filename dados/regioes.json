@@ -152,6 +152,22 @@
     "operador": "Amazon Web Services (AWS)"
   },
   {
+    "codigo": "eusc-de-east-1",
+    "nome": "AWS European Sovereign Cloud (Germany)",
+    "cidade": "Brandenburg",
+    "pais": "Alemanha",
+    "continente": "Europa",
+    "latitude": 52.4125,
+    "longitude": 12.5316,
+    "tipo": "regiao",
+    "anoLancamento": 2026,
+    "zonasDisponibilidade": 3,
+    "particao": "aws-eusc",
+    "tipoRegiao": "AWS European Sovereign Cloud",
+    "operador": "AWS European Sovereign Cloud (operada exclusivamente por residentes na UE)",
+    "descricaoEscopo": "Primeira região da partição independente AWS European Sovereign Cloud, localizada em Brandemburgo, Alemanha. Totalmente isolada da partição global comercial, projetada para atender a exigências rigorosas de soberania digital, privacidade e residência de dados da União Europeia (GDPR, Schrems II)."
+  },
+  {
     "codigo": "eu-central-1",
     "nome": "Europe (Frankfurt)",
     "cidade": "Frankfurt",

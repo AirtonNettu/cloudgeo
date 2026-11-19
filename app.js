@@ -149,6 +149,8 @@ function mostrarDetalhes(ponto) {
       ? "AWS GovCloud"
       : ponto.tipoRegiao === "AWS China"
       ? "AWS China"
+      : ponto.tipoRegiao === "AWS European Sovereign Cloud"
+      ? "European Sovereign Cloud"
       : "Região AWS";
   } else if (ponto.tipo === "local_zone") {
     tagCategoria.classList.add("tag-localzone");
@@ -268,6 +270,8 @@ function criarPainelPopup(ponto) {
       ? "AWS GovCloud"
       : ponto.tipoRegiao === "AWS China"
       ? "AWS China"
+      : ponto.tipoRegiao === "AWS European Sovereign Cloud"
+      ? "European Sovereign Cloud"
       : "Região AWS";
   } else if (ponto.tipo === "local_zone") {
     tag.classList.add("tag-localzone");

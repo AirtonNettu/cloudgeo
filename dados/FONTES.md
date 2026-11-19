@@ -6,7 +6,7 @@ Este documento descreve detalhadamente a metodologia, procedência oficial, data
 
 ## 1. Princípios de Coleta e Qualidade dos Dados
 
-1. **Fontes Oficiais**: Todos os pontos, identificadores de região, zonas locais e cidades de borda foram verificados na documentação pública oficial da Amazon Web Services (AWS).
+1. **Fontes Oficiais**: Todos os pontos, identificadores de região, zonas locais e cidades de borda foram verificados na documentação pública oficial e comunicações institucionais da Amazon Web Services (AWS).
 2. **Data de Efetiva Verificação Documental**: **19 de novembro de 2026**.
 3. **Sem Localizações Confidenciais de Data Centers**: Em estrita conformidade com os protocolos de segurança física da computação em nuvem, **não são expostos endereços exatos de galpões, coordenadas sigilosas de data centers ou topografias de cabeamento**.
 4. **Coordenadas Metropolitanas**: As coordenadas de latitude e longitude correspondem aos centroides urbanos e metropolitanos aproximados das cidades documentadas publicamente pela AWS.
@@ -18,28 +18,39 @@ Este documento descreve detalhadamente a metodologia, procedência oficial, data
 
 ### 2.1 Regiões AWS (`dados/regioes.json`)
 * **Definição**: Áreas geográficas isoladas compostas por múltiplos data centers independentes agrupados em Zonas de Disponibilidade (Availability Zones — AZs).
-* **Total Efetivamente Verificado no Catálogo**: **38 regiões ativas**.
+* **Total Efetivamente Verificado no Catálogo**: **39 regiões geográficas ativas** (alinhado exatamente ao total institucional de 39 Geographic Regions divulgado pela AWS).
 * **Diferenciação de Partições e Escopos**:
-  A AWS organiza suas regiões em partições com escopos de governança, autenticação e conformidade regulatória distintos:
+  A AWS organiza suas regiões em 4 partições independentes com escopos de governança, autenticação e conformidade regulatória distintos:
+
   1. **Comerciais Padrão (Partição `aws`) — 34 Regiões**:
      - **Américas (8)**: `us-east-1` (N. Virginia), `us-east-2` (Ohio), `us-west-1` (N. California), `us-west-2` (Oregon), `ca-central-1` (Central), `ca-west-1` (Calgary), `mx-central-1` (Mexico Central), `sa-east-1` (São Paulo).
      - **Europa (8)**: `eu-west-1` (Ireland), `eu-west-2` (London), `eu-west-3` (Paris), `eu-central-1` (Frankfurt), `eu-central-2` (Zurich), `eu-north-1` (Stockholm), `eu-south-1` (Milan), `eu-south-2` (Spain).
      - **Ásia & Oriente Médio (13)**: `me-south-1` (Bahrain), `me-central-1` (UAE), `il-central-1` (Israel), `ap-east-1` (Hong Kong), `ap-east-2` (Taipei), `ap-south-1` (Mumbai), `ap-south-2` (Hyderabad), `ap-southeast-1` (Singapore), `ap-southeast-3` (Jakarta), `ap-southeast-5` (Malaysia), `ap-southeast-7` (Thailand), `ap-northeast-1` (Tokyo), `ap-northeast-2` (Seoul), `ap-northeast-3` (Osaka).
      - **Oceania (3)**: `ap-southeast-2` (Sydney), `ap-southeast-4` (Melbourne), `ap-southeast-6` (New Zealand).
      - **África (1)**: `af-south-1` (Cape Town).
+
   2. **AWS GovCloud (Partição `aws-us-gov`) — 2 Regiões**:
      - `us-gov-east-1` e `us-gov-west-1`: isoladas física e logicamente nos EUA para atender aos requisitos de conformidade rigorosos do governo norte-americano (FedRAMP High, ITAR, DoD SRG Níveis 4-5).
-  3. **AWS China (Partição `aws-cn`) — 2 Regiões**:
-     - `cn-north-1` (Pequim) e `cn-northwest-1` (Ningxia): isoladas do restante da rede global da AWS para conformidade regulatória chinesa. Operadas por parceiros locais licenciados (**Sinnet** e **NWCD**), com credenciais exclusivas separadas da partição global.
 
-* **Esclarecimento sobre o Total Global Divulgado pela AWS (38 Catalogadas vs. 39 Divulgadas)**:
-  - Em suas páginas de marketing e visão institucional ("Global Infrastructure"), a AWS frequentemente divulga o número agregado de **39 Geographic Regions**.
-  - O CloudGeo cataloga rigorosamente as **38 regiões com endpoints públicos verificáveis** nas três partições acessíveis aos usuários da plataforma (`aws`, `aws-us-gov` e `aws-cn`).
-  - A 39ª região computada nos materiais agregados da AWS decorre da inclusão de regiões de segurança nacional dedicadas e classificadas dos EUA (como AWS Secret Region / Top Secret Region, que não expõem documentação nem endpoints públicos) ou de iniciativas soberanas anunciadas/em transição operacional restrita (como a AWS European Sovereign Cloud).
-  - Em conformidade com a política de integridade de dados deste projeto, **apenas infraestruturas com códigos, metadados e endpoints oficiais verificáveis são incluídas no catálogo**.
+  3. **AWS China (Partição `aws-cn`) — 2 Regiões**:
+     - `cn-north-1` (Pequim) e `cn-northwest-1` (Ningxia): isoladas do restante da rede global da AWS para conformidade regulatória chinesa. Operadas por parceiras locais licenciadas (**Sinnet** e **NWCD**), com credenciais exclusivas separadas da partição global.
+
+  4. **AWS European Sovereign Cloud (Partição `aws-eusc`) — 1 Região**:
+     - `eusc-de-east-1` (Brandenburg, Alemanha): lançada oficialmente em janeiro de 2026. Trata-se de uma partição completamente independente projetada para garantir soberania digital, privacidade e conformidade estrita da União Europeia (GDPR, Schrems II). Possui infraestrutura, plano de controle, contas e suporte 100% isolados e operados exclusivamente por cidadãos residentes na UE.
+
+* **Subtotais Consolidados por Continente (39 Regiões)**:
+  - **Ásia**: 16 regiões (13 comerciais padrão, 2 China e 1 em Israel / Oriente Médio integrado à Ásia)
+  - **Europa**: 9 regiões (8 comerciais padrão e 1 European Sovereign Cloud)
+  - **América do Norte**: 9 regiões (7 comerciais padrão e 2 GovCloud)
+  - **Oceania**: 3 regiões (3 comerciais padrão)
+  - **América do Sul**: 1 região (1 comercial padrão)
+  - **África**: 1 região (1 comercial padrão)
+  - **Total**: 16 + 9 + 9 + 3 + 1 + 1 = **39 Regiões**.
 
 * **Fontes Oficiais**:
   * [AWS Global Infrastructure — Regions and Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)
+  * [Opening the AWS European Sovereign Cloud (AWS News Blog, Jan/2026)](https://aws.amazon.com/blogs/aws/opening-the-aws-european-sovereign-cloud/)
+  * [AWS European Sovereign Cloud](https://aws.amazon.com/compliance/european-sovereign-cloud/)
   * [AWS GovCloud (US) Overview](https://aws.amazon.com/govcloud-us/)
   * [AWS in China Documentation & Regions](https://www.amazonaws.cn/en/about-aws/china/)
   * [AWS Service Endpoints and Quotas](https://docs.aws.amazon.com/general/latest/gr/rande.html)
