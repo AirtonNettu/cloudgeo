@@ -25,7 +25,7 @@ Este documento descreve detalhadamente a metodologia, procedência oficial, data
   1. **Comerciais Padrão (Partição `aws`) — 34 Regiões**:
      - **Américas (8)**: `us-east-1` (N. Virginia), `us-east-2` (Ohio), `us-west-1` (N. California), `us-west-2` (Oregon), `ca-central-1` (Central), `ca-west-1` (Calgary), `mx-central-1` (Mexico Central), `sa-east-1` (São Paulo).
      - **Europa (8)**: `eu-west-1` (Ireland), `eu-west-2` (London), `eu-west-3` (Paris), `eu-central-1` (Frankfurt), `eu-central-2` (Zurich), `eu-north-1` (Stockholm), `eu-south-1` (Milan), `eu-south-2` (Spain).
-     - **Ásia & Oriente Médio (13)**: `me-south-1` (Bahrain), `me-central-1` (UAE), `il-central-1` (Israel), `ap-east-1` (Hong Kong), `ap-east-2` (Taipei), `ap-south-1` (Mumbai), `ap-south-2` (Hyderabad), `ap-southeast-1` (Singapore), `ap-southeast-3` (Jakarta), `ap-southeast-5` (Malaysia), `ap-southeast-7` (Thailand), `ap-northeast-1` (Tokyo), `ap-northeast-2` (Seoul), `ap-northeast-3` (Osaka).
+     - **Ásia & Oriente Médio (14)**: `me-south-1` (Bahrain), `me-central-1` (UAE), `il-central-1` (Israel), `ap-east-1` (Hong Kong), `ap-east-2` (Taipei), `ap-south-1` (Mumbai), `ap-south-2` (Hyderabad), `ap-southeast-1` (Singapore), `ap-southeast-3` (Jakarta), `ap-southeast-5` (Malaysia), `ap-southeast-7` (Thailand), `ap-northeast-1` (Tokyo), `ap-northeast-2` (Seoul), `ap-northeast-3` (Osaka).
      - **Oceania (3)**: `ap-southeast-2` (Sydney), `ap-southeast-4` (Melbourne), `ap-southeast-6` (New Zealand).
      - **África (1)**: `af-south-1` (Cape Town).
 
@@ -39,7 +39,7 @@ Este documento descreve detalhadamente a metodologia, procedência oficial, data
      - `eusc-de-east-1` (Brandenburg, Alemanha): lançada oficialmente em janeiro de 2026. Trata-se de uma partição completamente independente projetada para garantir soberania digital, privacidade e conformidade estrita da União Europeia (GDPR, Schrems II). Possui infraestrutura, plano de controle, contas e suporte 100% isolados e operados exclusivamente por cidadãos residentes na UE.
 
 * **Subtotais Consolidados por Continente (39 Regiões)**:
-  - **Ásia**: 16 regiões (13 comerciais padrão, 2 China e 1 em Israel / Oriente Médio integrado à Ásia)
+  - **Ásia**: 16 regiões (14 comerciais padrão, incluindo Israel, e 2 AWS China)
   - **Europa**: 9 regiões (8 comerciais padrão e 1 European Sovereign Cloud)
   - **América do Norte**: 9 regiões (7 comerciais padrão e 2 GovCloud)
   - **Oceania**: 3 regiões (3 comerciais padrão)

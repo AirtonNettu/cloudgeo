@@ -122,7 +122,7 @@ Todos os conjuntos de dados foram compilados e verificados com base na documenta
   - 2 Regiões AWS China (Partição `aws-cn`, operadas por Sinnet e NWCD).
   - 1 Região AWS European Sovereign Cloud (Partição `aws-eusc`, `eusc-de-east-1` em Brandemburgo, Alemanha).
 - **Subtotais Consolidados por Continente (39 Regiões)**:
-  - **Ásia**: 16 regiões (13 comerciais padrão, 2 China e 1 em Israel)
+  - **Ásia**: 16 regiões (14 comerciais padrão, incluindo Israel, e 2 AWS China)
   - **Europa**: 9 regiões (8 comerciais padrão e 1 European Sovereign Cloud)
   - **América do Norte**: 9 regiões (7 comerciais padrão e 2 GovCloud)
   - **Oceania**: 3 regiões (3 comerciais padrão)
