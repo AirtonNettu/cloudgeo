@@ -287,6 +287,22 @@
     "operador": "Amazon Web Services (AWS)"
   },
   {
+    "codigo": "ap-southeast-6",
+    "nome": "Asia Pacific (New Zealand)",
+    "cidade": "Auckland",
+    "pais": "Nova Zelândia",
+    "continente": "Oceania",
+    "latitude": -36.8485,
+    "longitude": 174.7633,
+    "tipo": "regiao",
+    "anoLancamento": 2025,
+    "zonasDisponibilidade": 3,
+    "particao": "aws",
+    "tipoRegiao": "Comercial Padrão",
+    "operador": "Amazon Web Services (AWS)",
+    "descricaoEscopo": "Região comercial padrão na Oceania inaugurada em 2025 em Auckland, com três Zonas de Disponibilidade para atendimento a cargas de trabalho locais e soberania de dados na Nova Zelândia."
+  },
+  {
     "codigo": "ap-southeast-2",
     "nome": "Asia Pacific (Sydney)",
     "cidade": "Sydney",
@@ -435,6 +451,22 @@
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
     "operador": "Amazon Web Services (AWS)"
+  },
+  {
+    "codigo": "ap-east-2",
+    "nome": "Asia Pacific (Taipei)",
+    "cidade": "Taipei",
+    "pais": "Taiwan",
+    "continente": "Ásia",
+    "latitude": 25.033,
+    "longitude": 121.5654,
+    "tipo": "regiao",
+    "anoLancamento": 2025,
+    "zonasDisponibilidade": 3,
+    "particao": "aws",
+    "tipoRegiao": "Comercial Padrão",
+    "operador": "Amazon Web Services (AWS)",
+    "descricaoEscopo": "Região comercial padrão na Ásia-Pacífico inaugurada em 2025, fornecendo três Zonas de Disponibilidade e latência ultrabaixa para organizações e desenvolvedores em Taiwan."
   },
   {
     "codigo": "ap-southeast-7",

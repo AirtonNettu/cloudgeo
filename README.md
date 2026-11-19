@@ -18,14 +18,15 @@ No entanto, explorar essa infraestrutura apenas por meio de tabelas de documenta
 
 **O CloudGeo 2.0 fornece um mapa interativo unificado que categoriza e contextualiza três camadas fundamentais da rede global da AWS:**
 
-1. **Regiões AWS (36 Regiões ativas)**: Hubs geográficos completos e independentes com múltiplas Zonas de Disponibilidade (AZs), diferenciando claramente as partições:
-   - **Comercial Padrão (`aws`)**: 32 regiões globais públicas.
-   - **AWS GovCloud (`aws-us-gov`)**: 2 regiões isoladas nos EUA para conformidade governamental estrita (FedRAMP High, ITAR).
-   - **AWS China (`aws-cn`)**: 2 regiões isoladas operadas por parceiros locais qualificados (Sinnet em Pequim e NWCD em Ningxia).
+1. **Regiões AWS (38 Regiões ativas)**: Hubs geográficos completos e independentes com múltiplas Zonas de Disponibilidade (AZs), diferenciando claramente as partições:
+   - **Comerciais Padrão (`aws`) — 34 Regiões**: Incluindo lançamentos recentes como `ap-east-2` (Taipei) e `ap-southeast-6` (New Zealand).
+   - **AWS GovCloud (`aws-us-gov`) — 2 Regiões**: Isoladas nos EUA para conformidade governamental estrita (FedRAMP High, ITAR).
+   - **AWS China (`aws-cn`) — 2 Regiões**: Isoladas e operadas por parceiros locais qualificados (Sinnet em Pequim e NWCD em Ningxia).
+   *(Nota: O catálogo reflete as 38 regiões públicas com endpoints documentados. A 39ª região frequentemente citada em estatísticas agregadas da AWS decorre da inclusão de regiões de segurança nacional dedicadas/classificadas ou soberanas restritas).*
 2. **AWS Local Zones (46 Local Zones documentadas)**: Extensões de regiões que colocam computação e armazenamento em centros metropolitanos para latência de um dígito em milissegundos (< 10 ms).
 3. **CloudFront Points of Presence (108 Cidades com PoPs)**: Nós de borda para entrega acelerada de conteúdo (CDN) e resolução DNS (Route 53). *Nota: o catálogo registra as 108 cidades metropolitanas oficiais com infraestrutura de borda, e não o número físico de datacenters/servidores (a AWS opera 750+ PoPs físicos globalmente).*
 
-O projeto é 100% estático, sem backend proprietário ou banco de dados, maximizando confiabilidade, segurança e minimizando custos operacionais.
+O projeto é 100% estático, sem backend proprietário ou banco de dados, maximizando confiabilidade, segurança e minimizando custos operacionais. Todas as métricas do painel são calculadas dinamicamente a partir dos datasets carregados.
 
 ---
 
@@ -115,10 +116,11 @@ cloudgeo/
 
 Todos os conjuntos de dados foram compilados e verificados com base na documentação técnica oficial da AWS em **19 de novembro de 2026**:
 
-- **Regiões AWS (36 regiões ativas)**:
-  - 32 Regiões Comerciais Padrão (Partição `aws`)
-  - 2 Regiões AWS GovCloud nos EUA (Partição `aws-us-gov`)
-  - 2 Regiões AWS China (Partição `aws-cn`, operadas por Sinnet e NWCD)
+- **Regiões AWS (38 regiões ativas catalogadas)**:
+  - 34 Regiões Comerciais Padrão (Partição `aws`), incluindo adições confirmadas como `ap-east-2` (Taipei) e `ap-southeast-6` (New Zealand).
+  - 2 Regiões AWS GovCloud nos EUA (Partição `aws-us-gov`).
+  - 2 Regiões AWS China (Partição `aws-cn`, operadas por Sinnet e NWCD).
+  - *Esclarecimento de escopo:* A AWS divulga institucionalmente o número de 39 Geographic Regions; o CloudGeo cataloga rigorosamente as 38 regiões com endpoints públicos documentados, excluindo infraestruturas restritas de segurança nacional que não possuem endpoints públicos de acesso geral.
 - **AWS Local Zones (46 zonas locais)**: centros metropolitanos com Parent Regions documentadas (América do Norte, América do Sul, Europa, Ásia e África).
 - **CloudFront Points of Presence (108 cidades catalogadas)**: cidades metropolitanas mundiais com presença oficial de PoPs de borda (esclarecendo que a métrica quantifica as cidades sedes documentadas, não os mais de 750+ PoPs físicos individuais).
 - **Classificação Continental Padronizada (6 continentes)**: África, América do Norte, América do Sul, Ásia, Europa e Oceania. Regiões e zonas do Oriente Médio são classificadas formalmente no continente asiático.
@@ -189,14 +191,14 @@ Abra seu navegador em: `http://localhost:8000`
 - [x] Deploy contínuo via AWS Amplify Hosting.
 
 ### Fase 2 — CloudGeo 2.0 (Versão Atual)
-- [x] Expansão do catálogo para 36 Regiões AWS (32 Comerciais, 2 GovCloud e 2 China).
+- [x] Expansão do catálogo para 38 Regiões AWS (34 Comerciais incluindo `ap-east-2` e `ap-southeast-6`, 2 GovCloud e 2 China).
 - [x] Diferenciação de partições (`aws`, `aws-us-gov`, `aws-cn`) e escopo regulatório.
 - [x] Adição da camada independente de AWS Local Zones (46 zonas com Parent Regions).
 - [x] Adição da camada de CloudFront Points of Presence (108 cidades metropolitanas catalogadas).
 - [x] Padronização continental para 6 continentes (Oriente Médio integrado à Ásia).
 - [x] Implementação de Leaflet MarkerCluster para navegação fluida em alta densidade.
 - [x] Filtros independentes de camadas por chips clicáveis.
-- [x] Dashboard expandido com 5 indicadores em tempo real.
+- [x] Dashboard dinâmico expandido com 5 indicadores calculados em tempo real.
 - [x] Legenda visual dinâmica e integrada.
 - [x] Painel de detalhes enriquecido com metadados arquiteturais e descrições educativas.
 - [x] Otimizações de layout responsivo para smartphones e tablets.

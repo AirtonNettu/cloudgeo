@@ -18,26 +18,26 @@ Este documento descreve detalhadamente a metodologia, procedência oficial, data
 
 ### 2.1 Regiões AWS (`dados/regioes.json`)
 * **Definição**: Áreas geográficas isoladas compostas por múltiplos data centers independentes agrupados em Zonas de Disponibilidade (Availability Zones — AZs).
-* **Total Catalogado**: 36 regiões ativas.
+* **Total Efetivamente Verificado no Catálogo**: **38 regiões ativas**.
 * **Diferenciação de Partições e Escopos**:
   A AWS organiza suas regiões em partições com escopos de governança, autenticação e conformidade regulatória distintos:
-  1. **Comercial Padrão (Partição `aws`)**: 32 regiões globais de acesso público geral para empresas, desenvolvedores e organizações do mundo todo.
-  2. **AWS GovCloud (Partição `aws-us-gov`)**: 2 regiões (`us-gov-east-1` e `us-gov-west-1`) isoladas física e logicamente, projetadas para atender aos requisitos de conformidade mais rigorosos do governo dos EUA (FedRAMP High, ITAR, DoD SRG Níveis 4-5).
-  3. **AWS China (Partição `aws-cn`)**: 2 regiões (`cn-north-1` em Pequim e `cn-northwest-1` em Ningxia) isoladas do restante da rede global da AWS para conformidade regulatória e soberania de dados chinesa. Essas regiões são operadas por parceiros locais qualificados e licenciados (**Beijing Sinnet Technology Co., Ltd.** e **Ningxia Western Advanced Data Technology Co., Ltd. — NWCD**), possuindo contas e credenciais distintas da partição global da AWS.
-* **Campos Registrados**:
-  * `codigo`: Código identificador de API da região (ex.: `sa-east-1`, `us-gov-east-1`, `cn-north-1`).
-  * `nome`: Nome oficial de apresentação.
-  * `cidade`: Cidade ou região metropolitana sede.
-  * `pais`: País de implantação.
-  * `continente`: Continente geográfico padronizado.
-  * `latitude` / `longitude`: Centroide metropolitano aproximado.
-  * `tipo`: `"regiao"`.
-  * `particao`: Identificador de partição IAM (`aws`, `aws-us-gov` ou `aws-cn`).
-  * `tipoRegiao`: `"Comercial Padrão"`, `"AWS GovCloud"` ou `"AWS China"`.
-  * `operador`: Operador responsável pela infraestrutura física.
-  * `zonasDisponibilidade`: Quantidade de AZs ativas documentadas.
-  * `anoLancamento`: Ano de início das operações públicas.
-  * `descricaoEscopo`: Esclarecimento sobre o público-alvo e conformidade da partição.
+  1. **Comerciais Padrão (Partição `aws`) — 34 Regiões**:
+     - **Américas (8)**: `us-east-1` (N. Virginia), `us-east-2` (Ohio), `us-west-1` (N. California), `us-west-2` (Oregon), `ca-central-1` (Central), `ca-west-1` (Calgary), `mx-central-1` (Mexico Central), `sa-east-1` (São Paulo).
+     - **Europa (8)**: `eu-west-1` (Ireland), `eu-west-2` (London), `eu-west-3` (Paris), `eu-central-1` (Frankfurt), `eu-central-2` (Zurich), `eu-north-1` (Stockholm), `eu-south-1` (Milan), `eu-south-2` (Spain).
+     - **Ásia & Oriente Médio (13)**: `me-south-1` (Bahrain), `me-central-1` (UAE), `il-central-1` (Israel), `ap-east-1` (Hong Kong), `ap-east-2` (Taipei), `ap-south-1` (Mumbai), `ap-south-2` (Hyderabad), `ap-southeast-1` (Singapore), `ap-southeast-3` (Jakarta), `ap-southeast-5` (Malaysia), `ap-southeast-7` (Thailand), `ap-northeast-1` (Tokyo), `ap-northeast-2` (Seoul), `ap-northeast-3` (Osaka).
+     - **Oceania (3)**: `ap-southeast-2` (Sydney), `ap-southeast-4` (Melbourne), `ap-southeast-6` (New Zealand).
+     - **África (1)**: `af-south-1` (Cape Town).
+  2. **AWS GovCloud (Partição `aws-us-gov`) — 2 Regiões**:
+     - `us-gov-east-1` e `us-gov-west-1`: isoladas física e logicamente nos EUA para atender aos requisitos de conformidade rigorosos do governo norte-americano (FedRAMP High, ITAR, DoD SRG Níveis 4-5).
+  3. **AWS China (Partição `aws-cn`) — 2 Regiões**:
+     - `cn-north-1` (Pequim) e `cn-northwest-1` (Ningxia): isoladas do restante da rede global da AWS para conformidade regulatória chinesa. Operadas por parceiros locais licenciados (**Sinnet** e **NWCD**), com credenciais exclusivas separadas da partição global.
+
+* **Esclarecimento sobre o Total Global Divulgado pela AWS (38 Catalogadas vs. 39 Divulgadas)**:
+  - Em suas páginas de marketing e visão institucional ("Global Infrastructure"), a AWS frequentemente divulga o número agregado de **39 Geographic Regions**.
+  - O CloudGeo cataloga rigorosamente as **38 regiões com endpoints públicos verificáveis** nas três partições acessíveis aos usuários da plataforma (`aws`, `aws-us-gov` e `aws-cn`).
+  - A 39ª região computada nos materiais agregados da AWS decorre da inclusão de regiões de segurança nacional dedicadas e classificadas dos EUA (como AWS Secret Region / Top Secret Region, que não expõem documentação nem endpoints públicos) ou de iniciativas soberanas anunciadas/em transição operacional restrita (como a AWS European Sovereign Cloud).
+  - Em conformidade com a política de integridade de dados deste projeto, **apenas infraestruturas com códigos, metadados e endpoints oficiais verificáveis são incluídas no catálogo**.
+
 * **Fontes Oficiais**:
   * [AWS Global Infrastructure — Regions and Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)
   * [AWS GovCloud (US) Overview](https://aws.amazon.com/govcloud-us/)
@@ -49,17 +49,7 @@ Este documento descreve detalhadamente a metodologia, procedência oficial, data
 ### 2.2 AWS Local Zones (`dados/local_zones.json`)
 * **Definição**: Extensões de uma Região AWS que colocam serviços de computação (EC2), armazenamento (EBS) e banco de dados próximos a grandes centros populacionais e industriais onde não existe uma região tradicional. Seu objetivo principal é fornecer latência de um dígito em milissegundos (< 10 ms) para aplicações locais.
 * **Escopo e Relação com Regiões**: Uma Local Zone depende de uma **Região Pai (Parent Region)** que ancora seu plano de controle e serviços de gerenciamento.
-* **Total Catalogado**: 46 Local Zones distribuídas globalmente (América do Norte, América Latina, Europa, Ásia e África).
-* **Campos Registrados**:
-  * `codigo`: Identificador da zona ou grupo zonal (ex.: `us-east-1-bue-1`, `us-west-2-lax-1`).
-  * `nome`: Nome descritivo da Local Zone.
-  * `cidade`: Cidade metropolitana de instalação.
-  * `pais`: País sede.
-  * `continente`: Continente padronizado.
-  * `regiaoPai`: Código da região de ancoragem (ex.: `us-east-1`, `us-west-2`, `sa-east-1`).
-  * `regiaoPaiNome`: Nome da região de ancoragem.
-  * `latitude` / `longitude`: Centro urbano aproximado.
-  * `tipo`: `"local_zone"`.
+* **Total Catalogado**: 46 Local Zones distribuídas globalmente (América do Norte, América do Sul, Europa, Ásia e África).
 * **Fontes Oficiais**:
   * [AWS Local Zones Locations](https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/)
   * [Available Local Zones — AWS Documentation](https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html)
@@ -69,16 +59,9 @@ Este documento descreve detalhadamente a metodologia, procedência oficial, data
 ### 2.3 CloudFront Points of Presence (`dados/cloudfront_pops.json`)
 * **Definição e Esclarecimento Fundamental de Métrica**:
   * O arquivo `dados/cloudfront_pops.json` cataloga **cidades metropolitanas mundiais com Points of Presence (PoPs) oficiais confirmados**.
-  * **Importante**: O total de **108 entradas neste arquivo representa 108 cidades**, e **NÃO** a quantidade física individual de servidores ou data centers de borda.
+  * **Importante**: O total de **108 entradas neste arquivo representa 108 cidades sedes**, e **NÃO** a quantidade física individual de servidores ou data centers de borda.
   * A AWS opera **mais de 750+ Points of Presence (PoPs) físicos** em mais de 100+ cidades em 50+ países, complementados por mais de 1.140+ PoPs integrados (Embedded PoPs). Cidades como São Paulo, Frankfurt, Nova York, Londres e Tóquio contam com múltiplos PoPs e Regional Edge Caches operando simultaneamente na mesma metrópole.
 * **Serviços Atendidos**: Amazon CloudFront (CDN global) e Amazon Route 53 (DNS gerenciado global).
-* **Campos Registrados**:
-  * `nome`: Nome descritivo com a cidade do PoP.
-  * `cidade`: Cidade sede dos Pontos de Presença.
-  * `pais`: País do PoP.
-  * `continente`: Continente geográfico padronizado.
-  * `latitude` / `longitude`: Centroide metropolitano aproximado.
-  * `tipo`: `"cloudfront_pop"`.
 * **Fontes Oficiais**:
   * [Amazon CloudFront Key Features — Global Edge Network](https://aws.amazon.com/cloudfront/features/)
   * [Amazon Route 53 Global Network Details](https://aws.amazon.com/route53/)
