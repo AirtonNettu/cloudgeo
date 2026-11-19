@@ -1,67 +1,143 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CloudGeo | AWS Regions Explorer</title>
+  <title>CloudGeo 2.0 | AWS Global Infrastructure Explorer</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☁️</text></svg>">
 
+  <!-- Leaflet Core -->
   <link rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+  <!-- Leaflet MarkerCluster -->
+  <link rel="stylesheet"
+    href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+  <link rel="stylesheet"
+    href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>☁️ CloudGeo</h1>
-    <p>Explore a infraestrutura global da AWS</p>
+    <div class="header-container">
+      <div class="titulo-area">
+        <h1>☁️ CloudGeo 2.0</h1>
+        <p>AWS Global Infrastructure Explorer — Regiões, Local Zones e CloudFront PoPs</p>
+      </div>
+      <div class="header-badge">
+        <span>Dados Oficiais AWS</span>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section class="controles">
-      <label for="busca">Buscar região</label>
-      <input id="busca" type="search"
-        placeholder="Ex.: São Paulo, Tokyo, us-east-1">
+    <section class="controles" aria-label="Filtros de busca e visualização">
+      <div class="filtros-principais">
+        <div class="campo-busca">
+          <label for="busca">Buscar na infraestrutura</label>
+          <input id="busca" type="search"
+            placeholder="Ex.: São Paulo, us-east-1, local zone, cloudfront, tokyo">
+        </div>
 
-      <label for="continente">Continente</label>
-      <select id="continente">
-        <option value="">Todos</option>
-      </select>
+        <div class="campo-continente">
+          <label for="continente">Continente</label>
+          <select id="continente">
+            <option value="">Todos os continentes</option>
+          </select>
+        </div>
+      </div>
 
-      <p id="contador" aria-live="polite"></p>
+      <div class="filtros-categoria" role="group" aria-label="Filtrar por tipo de infraestrutura">
+        <span class="label-categoria">Camadas ativas:</span>
+        <div class="chips-container">
+          <label class="chip chip-regiao" title="Exibir/Ocultar Regiões AWS">
+            <input type="checkbox" id="filtro-regioes" checked>
+            <span class="chip-icone">☁️</span>
+            <span>Regiões AWS</span>
+            <span class="badge" id="badge-regioes">0</span>
+          </label>
+
+          <label class="chip chip-localzone" title="Exibir/Ocultar AWS Local Zones">
+            <input type="checkbox" id="filtro-localzones" checked>
+            <span class="chip-icone">⚡</span>
+            <span>Local Zones</span>
+            <span class="badge" id="badge-localzones">0</span>
+          </label>
+
+          <label class="chip chip-cloudfront" title="Exibir/Ocultar CloudFront Points of Presence">
+            <input type="checkbox" id="filtro-cloudfront" checked>
+            <span class="chip-icone">🌐</span>
+            <span>CloudFront PoPs</span>
+            <span class="badge" id="badge-cloudfront">0</span>
+          </label>
+
+          <button type="button" id="btn-reset-filtros" class="btn-reset" title="Restaurar visualização global e filtros">
+            ↺ Restaurar visão
+          </button>
+        </div>
+      </div>
+
+      <p id="contador" aria-live="polite">Carregando catálogo de infraestrutura...</p>
     </section>
 
-<section class="dashboard">
-  <article class="estatistica">
-    <span>Regiões AWS</span>
-    <strong id="total-regioes">0</strong>
-  </article>
+    <section class="dashboard" aria-label="Estatísticas da infraestrutura">
+      <article class="estatistica card-regioes">
+        <span>Regiões AWS</span>
+        <strong id="total-regioes">0</strong>
+        <small class="card-meta">Data Centers & AZs</small>
+      </article>
 
-  <article class="estatistica">
-    <span>Continentes</span>
-    <strong id="total-continentes">0</strong>
-  </article>
+      <article class="estatistica card-localzones">
+        <span>Local Zones</span>
+        <strong id="total-local-zones">0</strong>
+        <small class="card-meta">Baixa Latência Zonal</small>
+      </article>
 
-  <article class="estatistica">
-    <span>Regiões visíveis</span>
-    <strong id="regioes-visiveis">0</strong>
-  </article>
-</section>
-    <div id="mapa" aria-label="Mapa das regiões AWS"></div>
+      <article class="estatistica card-cloudfront">
+        <span>CloudFront PoPs</span>
+        <strong id="total-cloudfront">0</strong>
+        <small class="card-meta">Edge Network & CDN</small>
+      </article>
 
-<section class="detalhes" id="detalhes-regiao">
-  <h2>☁️ Informações da região</h2>
-  <p>Selecione um marcador no mapa para explorar
-     os detalhes de uma região AWS.</p>
-</section>
+      <article class="estatistica card-continentes">
+        <span>Continentes</span>
+        <strong id="total-continentes">0</strong>
+        <small class="card-meta">Presença Global</small>
+      </article>
 
+      <article class="estatistica card-visiveis">
+        <span>Pontos no mapa</span>
+        <strong id="regioes-visiveis">0</strong>
+        <small class="card-meta">Filtrados / Ativos</small>
+      </article>
+    </section>
+
+    <div class="legenda-mapa" aria-label="Legenda das camadas">
+      <span class="legenda-titulo">Legenda:</span>
+      <span class="legenda-item"><span class="indicador ind-regiao"></span> ☁️ Região AWS</span>
+      <span class="legenda-item"><span class="indicador ind-localzone"></span> ⚡ AWS Local Zone</span>
+      <span class="legenda-item"><span class="indicador ind-cloudfront"></span> 🌐 CloudFront PoP (Edge)</span>
+    </div>
+
+    <div id="mapa" aria-label="Mapa interativo da infraestrutura global AWS"></div>
+
+    <section class="detalhes" id="detalhes-regiao" aria-live="polite">
+      <h2>☁️ Informações da infraestrutura</h2>
+      <p>Selecione um marcador no mapa ou utilize a busca para explorar os detalhes das Regiões AWS, Local Zones e CloudFront Points of Presence.</p>
+    </section>
   </main>
 
   <footer>
-    Localizações aproximadas para fins educativos.
+    <div class="footer-content">
+      <p>CloudGeo 2.0 · Localizações aproximadas metropolitanas para fins educativos e arquiteturais.</p>
+      <p>Dados compilados e verificados com base na documentação pública oficial da <a href="https://aws.amazon.com/about-aws/global-infrastructure/" target="_blank" rel="noopener noreferrer">Amazon Web Services (AWS)</a>.</p>
+    </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
