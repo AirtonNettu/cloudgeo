@@ -28,7 +28,8 @@ const server = http.createServer((req, res) => {
   let filePath = path.join(ROOT, urlPath === '/' ? 'index.html' : urlPath);
 
   // Previne Directory Traversal
-  if (!filePath.startsWith(ROOT)) {
+  const rel = path.relative(ROOT, filePath);
+  if (rel.startsWith('..') || path.isAbsolute(rel)) {
     res.writeHead(403, { 'Content-Type': 'text/plain' });
     res.end('403 Forbidden');
     return;

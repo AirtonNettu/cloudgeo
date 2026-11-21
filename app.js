@@ -248,7 +248,7 @@ function mostrarDetalhes(ponto) {
 
   detalhesRegiao.appendChild(descricao);
 
-  if (ponto.fonteOficial) {
+  if (ponto.fonteOficial && /^https?:\/\//i.test(ponto.fonteOficial)) {
     const linkDiv = document.createElement("div");
     linkDiv.className = "detalhes-fonte";
     const linkA = document.createElement("a");
