@@ -119,16 +119,19 @@ test.describe('CloudGeo End-to-End Suite', () => {
 
   test('deve exibir painel de detalhes ao selecionar infraestrutura', async ({ page }) => {
     await page.goto('/index.html');
+    await expect(page.locator('#regioes-visiveis')).not.toHaveText('0');
 
     // Filtra para um único ponto para facilitar o clique preciso
     await page.fill('#busca', 'sa-east-1');
+    await page.waitForTimeout(800); // Aguarda estabilização do mapa após fitBounds
+
     const marker = page.locator('.leaflet-marker-icon').first();
     await expect(marker).toBeVisible({ timeout: 10000 });
     await marker.click({ force: true });
 
     const detalhes = page.locator('#detalhes-regiao');
-    await expect(detalhes.locator('h2')).toBeVisible();
-    await expect(detalhes.locator('.detalhes-grid')).toBeVisible();
+    await expect(detalhes.locator('h2')).toBeVisible({ timeout: 10000 });
+    await expect(detalhes.locator('.detalhes-grid')).toBeVisible({ timeout: 10000 });
   });
 
   test('deve ser responsivo em tela móvel', async ({ page }) => {

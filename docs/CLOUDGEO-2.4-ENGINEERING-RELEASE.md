@@ -172,14 +172,14 @@ Todas as dependências locais foram verificadas quanto à procedência e conform
 ```text
 > npm test
 
-✔ Sintaxe JavaScript (node --check app.js): PASSOU
+✔ Sintaxe JavaScript (node --check app.js && node --check data-filters.js): PASSOU
 ✔ Integridade das Dependências (12/12 arquivos verificados): PASSOU (Exit Code 0)
 ✔ Validação de Catálogos (196 registros em 3 catálogos): PASSOU (0 erros, 0 duplicidades)
-✔ Testes Unitários (9/9 suites em node:test): PASSOU (0 falhas, 146ms)
-✔ Testes E2E Playwright (16/16 testes em Chromium Desktop & Mobile): PASSOU (11.7s)
+✔ Testes Unitários Reais (10/10 cenários em node:test via data-filters.js): PASSOU (0 falhas)
+✔ Testes E2E Playwright (16/16 testes em Chromium Desktop & Mobile): PASSOU (11.5s)
 ```
 
-1. **Testes Unitários (9 cenários)**:
+1. **Testes Unitários Reais (10 cenários exercitando `data-filters.js` de produção)**:
    - Filtro sem critérios (retorna total de pontos).
    - Busca por texto (cidade).
    - Busca por código de região.
@@ -187,8 +187,9 @@ Todas as dependências locais foram verificadas quanto à procedência e conform
    - Alternância de camadas ativas.
    - Combinação de múltiplos filtros.
    - Extração alfabética de continentes únicos.
+   - Extração de campos textuais pesquisáveis de pontos.
    - Cálculo de métricas agregadas.
-   - Tratamento de lista vazia.
+   - Tratamento de lista vazia sem exceções.
 2. **Testes E2E (16 cenários)**:
    - Ausência de erros de console e CSP nas resoluções Desktop (1280x720) e Mobile (375x667).
    - Validação da renderização do mapa e marcadores agrupados.
@@ -213,18 +214,31 @@ Todas as dependências locais foram verificadas quanto à procedência e conform
 
 ### 8. Procedimento de Rollback
 
-Caso seja identificado qualquer comportamento anômalo após o merge ou deploy no AWS Amplify Hosting:
+Caso seja identificado qualquer comportamento anômalo após a integração ou deploy no AWS Amplify Hosting:
 
-1. **Reversão via Git**:
-   ```bash
-   git checkout main
-   git revert -m 1 <COMMIT_MERGE_SHA>
-   git push origin main
-   ```
-2. **Reversão via Console AWS Amplify Hosting**:
+1. **Reversão via Git (Conforme a Estratégia de Merge Utilizada)**:
+   - **Cenário A — Se o PR foi integrado via Squash Merge (1 commit único na main)**:
+     ```bash
+     git checkout main
+     git pull origin main
+     git revert <SQUASH_COMMIT_SHA>
+     git push origin main
+     ```
+     *(Nota: Não utilize a flag `-m 1` em commits de squash merge, pois o Git retornará erro por se tratar de um commit regular com único pai).*
+
+   - **Cenário B — Se o PR foi integrado via Merge Commit Tradicional (com 2 pais)**:
+     ```bash
+     git checkout main
+     git pull origin main
+     git revert -m 1 <MERGE_COMMIT_SHA>
+     git push origin main
+     ```
+     *(Nota: A flag `-m 1` é estritamente obrigatória em merge commits para instruir o Git a preservar a linha temporal da branch principal `main` como pai de referência).*
+
+2. **Reversão Instantânea via Console AWS Amplify Hosting (Sem necessidade de Git push)**:
    - Acesse o Console AWS Amplify > CloudGeo > Deployments.
-   - Localize o deployment da versão 2.1 (commit `9150b05` ou PR #3).
-   - Clique em **Redeploy this version**. O tráfego será restabelecido instantaneamente para o artefato anterior.
+   - Localize o deployment da versão 2.1 (commit `9150b05` correspondente ao PR #3).
+   - Clique em **Redeploy this version**. O tráfego de produção será restabelecido instantaneamente para a versão anterior em segundos.
 
 ---
 

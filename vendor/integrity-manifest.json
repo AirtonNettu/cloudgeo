@@ -18,9 +18,9 @@
   "files": {
     "vendor/leaflet/leaflet.css": {
       "sourceUrl": "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
-      "sizeBytes": 14806,
-      "sha384": "sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H",
-      "sha256": "sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      "sizeBytes": 14145,
+      "sha384": "sha384-Eg+NzzpxiHf8n8FR0ootH/p/s0a33ljAFe4AqhcVbsQfR/WmVsHNIR1Uh37E0omq",
+      "sha256": "sha256-M3v8pcq9A7OYFbJwD+vis7ft9VkhxZzUn4jssyghIwM="
     },
     "vendor/leaflet/leaflet.js": {
       "sourceUrl": "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
@@ -60,9 +60,9 @@
     },
     "vendor/leaflet/LICENSE": {
       "sourceUrl": "https://raw.githubusercontent.com/Leaflet/Leaflet/v1.9.4/LICENSE",
-      "sizeBytes": 1395,
-      "sha384": "sha384-CXYK4I2izUBQWizu8sKhYyBLtabBOMnWJhiEcYE2hnY+ov3P+/NGnAkucH4hN0hK",
-      "sha256": "sha256-U+jcJYYgFOQyR0HKGPvjYR4R1C72n1n4bqjFOJZH1Ms="
+      "sizeBytes": 1369,
+      "sha384": "sha384-6JlknLyi1JZPmmA06Yk8rx81FqpE9nHwOACY+j6WCnCuyI/emvKio4dKb0maRUjd",
+      "sha256": "sha256-u8lZqu90iLOJQufwXP0SRDUfi85UJhlR6hfdfPYPiUs="
     },
     "vendor/markercluster/MarkerCluster.css": {
       "sourceUrl": "https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css",

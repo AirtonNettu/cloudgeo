@@ -36,13 +36,13 @@
     "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
-    "codigo": "us-east-2-chi-1",
+    "codigo": "us-east-1-chi-1",
     "nome": "AWS Local Zone (Chicago)",
     "cidade": "Chicago",
     "pais": "Estados Unidos",
     "continente": "América do Norte",
-    "regiaoPai": "us-east-2",
-    "regiaoPaiNome": "US East (Ohio)",
+    "regiaoPai": "us-east-1",
+    "regiaoPaiNome": "US East (N. Virginia)",
     "latitude": 41.8781,
     "longitude": -87.6298,
     "tipo": "local_zone",
@@ -101,11 +101,12 @@
     "longitude": -83.0458,
     "tipo": "local_zone",
     "versaoEsquema": "2.4",
-    "estadoOperacional": "operacional",
+    "estadoOperacional": "descontinuado",
     "categoria": "local_zone",
     "particao": "aws",
     "dataUltimaVerificacao": "2026-11-21",
-    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
+    "fonteOficial": "https://aws.amazon.com/wavelength/",
+    "observacao": "Infraestrutura metropolitana atendida por AWS Wavelength (us-east-1-wl1-dtw-wlz-1); não listada na tabela Available Local Zones."
   },
   {
     "codigo": "us-west-2-hnl-1",
@@ -144,13 +145,13 @@
     "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
-    "codigo": "us-east-2-mci-1",
+    "codigo": "us-east-1-mci-1",
     "nome": "AWS Local Zone (Kansas City)",
     "cidade": "Kansas City",
     "pais": "Estados Unidos",
     "continente": "América do Norte",
-    "regiaoPai": "us-east-2",
-    "regiaoPaiNome": "US East (Ohio)",
+    "regiaoPai": "us-east-1",
+    "regiaoPaiNome": "US East (N. Virginia)",
     "latitude": 39.0997,
     "longitude": -94.5786,
     "tipo": "local_zone",
@@ -216,13 +217,13 @@
     "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
-    "codigo": "us-east-2-msp-1",
+    "codigo": "us-east-1-msp-1",
     "nome": "AWS Local Zone (Minneapolis)",
     "cidade": "Minneapolis",
     "pais": "Estados Unidos",
     "continente": "América do Norte",
-    "regiaoPai": "us-east-2",
-    "regiaoPaiNome": "US East (Ohio)",
+    "regiaoPai": "us-east-1",
+    "regiaoPaiNome": "US East (N. Virginia)",
     "latitude": 44.9778,
     "longitude": -93.265,
     "tipo": "local_zone",
@@ -317,11 +318,11 @@
     "longitude": -79.3832,
     "tipo": "local_zone",
     "versaoEsquema": "2.4",
-    "estadoOperacional": "operacional",
+    "estadoOperacional": "anunciado",
     "categoria": "local_zone",
     "particao": "aws",
     "dataUltimaVerificacao": "2026-11-21",
-    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/"
   },
   {
     "codigo": "ca-central-1-yvr-1",
@@ -335,11 +336,11 @@
     "longitude": -123.1207,
     "tipo": "local_zone",
     "versaoEsquema": "2.4",
-    "estadoOperacional": "operacional",
+    "estadoOperacional": "anunciado",
     "categoria": "local_zone",
     "particao": "aws",
     "dataUltimaVerificacao": "2026-11-21",
-    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/"
   },
   {
     "codigo": "us-east-1-qro-1",
@@ -443,11 +444,11 @@
     "longitude": -43.1729,
     "tipo": "local_zone",
     "versaoEsquema": "2.4",
-    "estadoOperacional": "operacional",
+    "estadoOperacional": "anunciado",
     "categoria": "local_zone",
     "particao": "aws",
     "dataUltimaVerificacao": "2026-11-21",
-    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/"
   },
   {
     "codigo": "eu-north-1-cph-1",
@@ -515,11 +516,11 @@
     "longitude": 11.582,
     "tipo": "local_zone",
     "versaoEsquema": "2.4",
-    "estadoOperacional": "operacional",
+    "estadoOperacional": "anunciado",
     "categoria": "local_zone",
     "particao": "aws",
     "dataUltimaVerificacao": "2026-11-21",
-    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/"
   },
   {
     "codigo": "eu-central-1-waw-1",
@@ -551,11 +552,11 @@
     "longitude": 14.4378,
     "tipo": "local_zone",
     "versaoEsquema": "2.4",
-    "estadoOperacional": "operacional",
+    "estadoOperacional": "anunciado",
     "categoria": "local_zone",
     "particao": "aws",
     "dataUltimaVerificacao": "2026-11-21",
-    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/"
   },
   {
     "codigo": "eu-west-1-ams-1",
@@ -569,11 +570,11 @@
     "longitude": 4.9041,
     "tipo": "local_zone",
     "versaoEsquema": "2.4",
-    "estadoOperacional": "operacional",
+    "estadoOperacional": "anunciado",
     "categoria": "local_zone",
     "particao": "aws",
     "dataUltimaVerificacao": "2026-11-21",
-    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/"
   },
   {
     "codigo": "eu-west-1-bru-1",
@@ -587,11 +588,11 @@
     "longitude": 4.3517,
     "tipo": "local_zone",
     "versaoEsquema": "2.4",
-    "estadoOperacional": "operacional",
+    "estadoOperacional": "anunciado",
     "categoria": "local_zone",
     "particao": "aws",
     "dataUltimaVerificacao": "2026-11-21",
-    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/"
   },
   {
     "codigo": "eu-central-1-vie-1",
@@ -605,11 +606,11 @@
     "longitude": 16.3738,
     "tipo": "local_zone",
     "versaoEsquema": "2.4",
-    "estadoOperacional": "operacional",
+    "estadoOperacional": "anunciado",
     "categoria": "local_zone",
     "particao": "aws",
     "dataUltimaVerificacao": "2026-11-21",
-    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/"
   },
   {
     "codigo": "eu-south-2-lis-1",
@@ -623,11 +624,11 @@
     "longitude": -9.1393,
     "tipo": "local_zone",
     "versaoEsquema": "2.4",
-    "estadoOperacional": "operacional",
+    "estadoOperacional": "anunciado",
     "categoria": "local_zone",
     "particao": "aws",
     "dataUltimaVerificacao": "2026-11-21",
-    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/"
   },
   {
     "codigo": "af-south-1-jnb-1",
@@ -641,11 +642,11 @@
     "longitude": 28.0473,
     "tipo": "local_zone",
     "versaoEsquema": "2.4",
-    "estadoOperacional": "operacional",
+    "estadoOperacional": "anunciado",
     "categoria": "local_zone",
     "particao": "aws",
     "dataUltimaVerificacao": "2026-11-21",
-    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/"
   },
   {
     "codigo": "af-south-1-nbo-1",
@@ -659,11 +660,11 @@
     "longitude": 36.8219,
     "tipo": "local_zone",
     "versaoEsquema": "2.4",
-    "estadoOperacional": "operacional",
+    "estadoOperacional": "anunciado",
     "categoria": "local_zone",
     "particao": "aws",
     "dataUltimaVerificacao": "2026-11-21",
-    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/"
   },
   {
     "codigo": "me-south-1-mct-1",
@@ -749,11 +750,11 @@
     "longitude": 80.2707,
     "tipo": "local_zone",
     "versaoEsquema": "2.4",
-    "estadoOperacional": "operacional",
+    "estadoOperacional": "anunciado",
     "categoria": "local_zone",
     "particao": "aws",
     "dataUltimaVerificacao": "2026-11-21",
-    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/"
   },
   {
     "codigo": "ap-south-1-blr-1",
@@ -767,11 +768,11 @@
     "longitude": 77.5946,
     "tipo": "local_zone",
     "versaoEsquema": "2.4",
-    "estadoOperacional": "operacional",
+    "estadoOperacional": "anunciado",
     "categoria": "local_zone",
     "particao": "aws",
     "dataUltimaVerificacao": "2026-11-21",
-    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/"
   },
   {
     "codigo": "ap-southeast-2-akl-1",

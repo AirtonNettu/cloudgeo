@@ -23,7 +23,7 @@ No entanto, explorar essa infraestrutura apenas por meio de tabelas de documenta
    - **AWS GovCloud (`aws-us-gov`) — 2 Regiões**: Isoladas nos EUA para conformidade governamental estrita (FedRAMP High, ITAR).
    - **AWS China (`aws-cn`) — 2 Regiões**: Isoladas e operadas por parceiros locais licenciados (Sinnet em Pequim e NWCD em Ningxia).
    - **AWS European Sovereign Cloud (`aws-eusc`) — 1 Região**: Inaugurada em janeiro de 2026 em Brandemburgo, Alemanha (`eusc-de-east-1`), totalmente isolada e operada exclusivamente por residentes na UE para atender aos requisitos de soberania digital (GDPR, Schrems II).
-2. **AWS Local Zones (49 Local Zones ativas)**: Extensões de regiões que colocam computação e armazenamento em centros metropolitanos para latência de um dígito em milissegundos (< 10 ms), incluindo adições de 2026: Atenas (`eu-central-1-ath-1`), Istambul (`eu-central-1-ist-1`) e Hanói (`ap-southeast-1-han-1`).
+2. **AWS Local Zones (49 Local Zones conciliadas)**: Extensões de regiões para latência de um dígito em milissegundos (< 10 ms), com classificação factual transparente entre 35 operacionais (GA), 13 anunciadas (em planejamento) e 1 reclassificada (Detroit - Wavelength), incluindo expansões de 2026 em Atenas (`eu-central-1-ath-1`), Istambul (`eu-central-1-ist-1`) e Hanói (`ap-southeast-1-han-1`).
 3. **CloudFront Points of Presence (108 Cidades com PoPs)**: Nós de borda para entrega acelerada de conteúdo (CDN) e resolução DNS (Route 53). *Nota: o catálogo registra as 108 cidades metropolitanas oficiais com infraestrutura de borda, e não o número físico de datacenters/servidores (a AWS opera 750+ PoPs físicos globalmente).*
 
 O projeto é 100% estático, sem backend proprietário ou banco de dados, maximizando confiabilidade, segurança e minimizando custos operacionais. Todas as métricas do painel são calculadas dinamicamente a partir dos datasets carregados.
@@ -100,10 +100,11 @@ Navegador do Usuário
 cloudgeo/
 ├── .github/
 │   └── workflows/
-│       └── quality.yml         # Pipeline CI de qualidade e testes automatizados
+│       ├── quality.yml         # Pipeline CI de qualidade e testes automatizados
+│       └── data-audit.yml      # Auditoria semanal periódica de dados AWS
 ├── dados/
 │   ├── regioes.json            # Catálogo oficial de Regiões AWS comerciais (39 registros)
-│   ├── local_zones.json        # Catálogo oficial de AWS Local Zones (49 registros)
+│   ├── local_zones.json        # Catálogo oficial de AWS Local Zones (49 registros conciliados)
 │   ├── cloudfront_pops.json    # Catálogo de cidades com CloudFront PoPs (108 registros)
 │   ├── FONTES.md               # Documentação metodológica, fontes e partições
 │   └── RELATORIO_AUDITORIA_DADOS.md # Relatório da auditoria de dados contra AWS IP Ranges
@@ -114,22 +115,25 @@ cloudgeo/
 │       └── cloudgeo-architecture.svg       # Diagrama vetorial oficial da arquitetura
 ├── scripts/
 │   ├── audit-aws-data.js       # Automação de verificação periódica contra fontes públicas da AWS
-│   ├── serve.js                # Servidor estático local seguro em Node.js nativo
+│   ├── serve.js                # Servidor estático local seguro e isolado em Node.js nativo
 │   ├── validate-catalogs.js    # Validador de integridade e regras de negócio dos catálogos
 │   └── verify-vendor-integrity.js # Verificador de hashes criptográficos dos arquivos vendored
 ├── tests/
 │   ├── e2e/
 │   │   └── cloudgeo.spec.js    # Suíte Playwright multi-dispositivo (Desktop & Mobile)
 │   └── unit/
-│       └── data-filters.test.js # Testes unitários com test runner nativo do Node.js
+│       └── data-filters.test.js # Testes unitários reais exercitando data-filters.js
 ├── vendor/
 │   ├── integrity-manifest.json # Manifesto criptográfico SHA-384 / SHA-256 de todas as dependências
 │   ├── leaflet/                # Leaflet 1.9.4 (JS, CSS, imagens e licença BSD-2-Clause)
 │   └── markercluster/          # MarkerCluster 1.5.3 (JS, CSS e licença MIT)
+├── .gitattributes              # Normalização de quebras de linha e preservação binária do vendor
+├── amplify.yml                 # Especificação de build e exclusão de arquivos de desenvolvimento
 ├── customHttp.yml              # Cabeçalhos HTTP defensivos para AWS Amplify Hosting
 ├── index.html                  # Interface da aplicação, controles, dashboard e legenda
 ├── style.css                   # Design responsivo, tema escuro e customizações Leaflet
-├── app.js                      # Inicialização Leaflet, busca, clustering e painel de detalhes
+├── app.js                      # Inicialização Leaflet, renderização e painel de detalhes
+├── data-filters.js             # Módulo compartilhado de filtragem e cálculo de métricas
 ├── package.json                # Configuração do projeto e scripts de teste
 ├── playwright.config.js        # Configuração do framework de testes E2E Playwright
 └── README.md                   # Documentação completa do projeto

@@ -24,6 +24,12 @@ const VALID_PARTITIONS = [
   'aws-eusc'
 ];
 
+const VALID_STATUSES = [
+  'operacional',
+  'anunciado',
+  'descontinuado'
+];
+
 const FORBIDDEN_KEYS = ['__proto__', 'constructor', 'prototype'];
 
 function validateDataset(filePath, requiredFields, idField = null) {
@@ -89,7 +95,12 @@ function validateDataset(filePath, requiredFields, idField = null) {
       errors.push(`[${filePath} #${index}] Partição AWS inválida: "${item.particao}". Esperado uma de: ${VALID_PARTITIONS.join(', ')}`);
     }
 
-    // 6. Unicidade de identificador (se aplicável)
+    // 6. Validação de estado operacional (se informado)
+    if (item.estadoOperacional && !VALID_STATUSES.includes(item.estadoOperacional)) {
+      errors.push(`[${filePath} #${index}] Estado operacional inválido: "${item.estadoOperacional}". Esperado um de: ${VALID_STATUSES.join(', ')}`);
+    }
+
+    // 7. Unicidade de identificador (se aplicável)
     if (idField && item[idField]) {
       const id = String(item[idField]).trim().toLowerCase();
       if (seenIds.has(id)) {
