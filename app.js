@@ -78,6 +78,11 @@ let catalogoLocalZones = [];
 let catalogoCloudFront = [];
 let todosPontos = [];
 
+// Motor compartilhado de dados e regras de negócio (data-filters.js)
+const dataEngine = (typeof window !== "undefined" && window.CloudGeoFilters)
+  ? window.CloudGeoFilters
+  : (typeof CloudGeoFilters !== "undefined" ? CloudGeoFilters : null);
+
 // ==================================================
 // 4. CRIADORES DE ÍCONES CUSTOMIZADOS
 // ==================================================
@@ -204,6 +209,13 @@ function mostrarDetalhes(ponto) {
     `${ponto.latitude.toFixed(4)}, ${ponto.longitude.toFixed(4)}`
   ]);
 
+  if (ponto.estadoOperacional) {
+    informacoes.push(["Estado Operacional", ponto.estadoOperacional === "operacional" ? "Operacional (GA)" : ponto.estadoOperacional]);
+  }
+  if (ponto.dataUltimaVerificacao) {
+    informacoes.push(["Última Verificação", ponto.dataUltimaVerificacao]);
+  }
+
   informacoes.forEach(([rotulo, valor]) => {
     const item = document.createElement("div");
     item.className = "detalhes-item";
@@ -240,6 +252,18 @@ function mostrarDetalhes(ponto) {
   }
 
   detalhesRegiao.appendChild(descricao);
+
+  if (ponto.fonteOficial && /^https?:\/\//i.test(ponto.fonteOficial)) {
+    const linkDiv = document.createElement("div");
+    linkDiv.className = "detalhes-fonte";
+    const linkA = document.createElement("a");
+    linkA.href = ponto.fonteOficial;
+    linkA.target = "_blank";
+    linkA.rel = "noopener noreferrer";
+    linkA.textContent = "↗ Consultar Documentação Oficial AWS";
+    linkDiv.appendChild(linkA);
+    detalhesRegiao.appendChild(linkDiv);
+  }
 
   // Em telas móveis, rola suavemente para o painel se estiver abaixo do viewport
   if (window.innerWidth <= 768) {
@@ -306,58 +330,28 @@ function criarPainelPopup(ponto) {
 function renderizarPontos() {
   grupoMarcadores.clearLayers();
 
-  const texto = busca.value.toLowerCase().trim();
+  const texto = busca.value;
   const filtroContinente = continente.value;
 
-  const exibirRegioes = filtroRegioes.checked;
-  const exibirLocalZones = filtroLocalZones.checked;
-  const exibirCloudfront = filtroCloudfront.checked;
+  const categorias = {
+    regiao: filtroRegioes.checked,
+    local_zone: filtroLocalZones.checked,
+    cloudfront_pop: filtroCloudfront.checked
+  };
 
-  let contRegioesVisiveis = 0;
-  let contLocalZonesVisiveis = 0;
-  let contCloudfrontVisiveis = 0;
+  // Executa filtragem através do motor compartilhado de produção
+  const filtrados = dataEngine
+    ? dataEngine.filtrarPontos(todosPontos, { texto, continente: filtroContinente, categorias })
+    : todosPontos;
 
-  // Filtra os pontos do catálogo unificado
-  const filtrados = todosPontos.filter(ponto => {
-    // 1. Checagem de categoria ativada
-    if (ponto.tipo === "regiao" && !exibirRegioes) return false;
-    if (ponto.tipo === "local_zone" && !exibirLocalZones) return false;
-    if (ponto.tipo === "cloudfront_pop" && !exibirCloudfront) return false;
-
-    // 2. Checagem de continente
-    if (filtroContinente && ponto.continente !== filtroContinente) {
-      return false;
-    }
-
-    // 3. Checagem de texto na busca
-    if (texto) {
-      const camposBusca = [
-        ponto.nome || "",
-        ponto.codigo || "",
-        ponto.cidade || "",
-        ponto.pais || "",
-        ponto.continente || "",
-        ponto.regiaoPai || "",
-        ponto.regiaoPaiNome || "",
-        ponto.tipoRegiao || "",
-        ponto.particao || "",
-        ponto.operador || ""
-      ];
-
-      const combinaBusca = camposBusca.some(campo =>
-        campo.toLowerCase().includes(texto)
-      );
-
-      if (!combinaBusca) return false;
-    }
-
-    // Contabiliza por categoria visível
-    if (ponto.tipo === "regiao") contRegioesVisiveis++;
-    else if (ponto.tipo === "local_zone") contLocalZonesVisiveis++;
-    else if (ponto.tipo === "cloudfront_pop") contCloudfrontVisiveis++;
-
-    return true;
-  });
+  const metricas = dataEngine
+    ? dataEngine.calcularMetricas(todosPontos, filtrados)
+    : {
+        regioesVisiveis: filtrados.filter(p => p.tipo === "regiao").length,
+        localZonesVisiveis: filtrados.filter(p => p.tipo === "local_zone").length,
+        cloudfrontVisiveis: filtrados.filter(p => p.tipo === "cloudfront_pop").length,
+        pontosVisiveis: filtrados.length
+      };
 
   // Cria marcadores no mapa
   filtrados.forEach(ponto => {
@@ -378,17 +372,17 @@ function renderizarPontos() {
   });
 
   // Atualiza indicadores e badges
-  badgeRegioes.textContent = contRegioesVisiveis;
-  badgeLocalzones.textContent = contLocalZonesVisiveis;
-  badgeCloudfront.textContent = contCloudfrontVisiveis;
-  regioesVisiveis.textContent = filtrados.length;
+  badgeRegioes.textContent = metricas.regioesVisiveis;
+  badgeLocalzones.textContent = metricas.localZonesVisiveis;
+  badgeCloudfront.textContent = metricas.cloudfrontVisiveis;
+  regioesVisiveis.textContent = metricas.pontosVisiveis;
 
   // Atualiza mensagem de status acessível
   if (filtrados.length === 0) {
     contador.textContent = "Nenhum ponto de infraestrutura encontrado para os filtros atuais.";
   } else {
     contador.textContent =
-      `Exibindo ${filtrados.length} pontos no mapa: ${contRegioesVisiveis} Regiões AWS, ${contLocalZonesVisiveis} Local Zones e ${contCloudfrontVisiveis} cidades com CloudFront PoPs.`;
+      `Exibindo ${filtrados.length} pontos no mapa: ${metricas.regioesVisiveis} Regiões AWS, ${metricas.localZonesVisiveis} Local Zones e ${metricas.cloudfrontVisiveis} cidades com CloudFront PoPs.`;
   }
 
   // Ajusta limites do mapa se houver busca específica ou filtro ativo
@@ -455,16 +449,22 @@ async function inicializar() {
       ...catalogoCloudFront
     ];
 
-    // Atualiza contadores totais do catálogo no dashboard
-    totalRegioes.textContent = catalogoRegioes.length;
-    totalLocalZones.textContent = catalogoLocalZones.length;
-    totalCloudfront.textContent = catalogoCloudFront.length;
+    // Atualiza contadores totais usando o motor compartilhado
+    const continentesUnicos = dataEngine
+      ? dataEngine.extrairContinentes(todosPontos)
+      : [...new Set(todosPontos.map(p => p.continente).filter(Boolean))].sort();
 
-    // Calcula total de continentes únicos
-    const continentesUnicos = [
-      ...new Set(todosPontos.map(p => p.continente).filter(Boolean))
-    ].sort();
+    const metricasIniciais = dataEngine
+      ? dataEngine.calcularMetricas(todosPontos, todosPontos)
+      : {
+          totalRegioes: catalogoRegioes.length,
+          totalLocalZones: catalogoLocalZones.length,
+          totalCloudfront: catalogoCloudFront.length
+        };
 
+    totalRegioes.textContent = metricasIniciais.totalRegioes;
+    totalLocalZones.textContent = metricasIniciais.totalLocalZones;
+    totalCloudfront.textContent = metricasIniciais.totalCloudfront;
     totalContinentes.textContent = continentesUnicos.length;
 
     // Popula select de continentes

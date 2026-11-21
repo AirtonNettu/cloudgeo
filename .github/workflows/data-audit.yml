@@ -1,0 +1,44 @@
+name: AWS Data Accuracy & Governance Audit
+
+on:
+  schedule:
+    # Executa semanalmente às segundas-feiras às 03:00 UTC
+    - cron: '0 3 * * 1'
+  workflow_dispatch:
+
+# Permissões mínimas para execução em conformidade com o princípio de menor privilégio
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit-data:
+    name: Audit AWS Data Accuracy
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4.1.0
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies (clean install)
+        run: npm ci
+
+      - name: Execute AWS data accuracy audit
+        run: npm run audit:data
+
+      - name: Upload audit report artifact
+        uses: actions/upload-artifact@ea165f4d1e1559e211ecadfc1ab84b3967819777 # v4.6.1
+        with:
+          name: relatorio-auditoria-dados
+          path: dados/RELATORIO_AUDITORIA_DADOS.md
+          retention-days: 30

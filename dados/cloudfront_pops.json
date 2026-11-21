@@ -6,7 +6,12 @@
     "latitude": -23.5505,
     "longitude": -46.6333,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (São Paulo)"
+    "nome": "CloudFront Edge PoP (São Paulo)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Rio de Janeiro",
@@ -15,7 +20,12 @@
     "latitude": -22.9068,
     "longitude": -43.1729,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Rio de Janeiro)"
+    "nome": "CloudFront Edge PoP (Rio de Janeiro)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Fortaleza",
@@ -24,7 +34,12 @@
     "latitude": -3.7319,
     "longitude": -38.5267,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Fortaleza)"
+    "nome": "CloudFront Edge PoP (Fortaleza)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Curitiba",
@@ -33,7 +48,12 @@
     "latitude": -25.4284,
     "longitude": -49.2733,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Curitiba)"
+    "nome": "CloudFront Edge PoP (Curitiba)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Buenos Aires",
@@ -42,7 +62,12 @@
     "latitude": -34.6037,
     "longitude": -58.3816,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Buenos Aires)"
+    "nome": "CloudFront Edge PoP (Buenos Aires)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Santiago",
@@ -51,7 +76,12 @@
     "latitude": -33.4489,
     "longitude": -70.6693,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Santiago)"
+    "nome": "CloudFront Edge PoP (Santiago)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Bogotá",
@@ -60,7 +90,12 @@
     "latitude": 4.711,
     "longitude": -74.0721,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Bogotá)"
+    "nome": "CloudFront Edge PoP (Bogotá)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Lima",
@@ -69,7 +104,12 @@
     "latitude": -12.0464,
     "longitude": -77.0428,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Lima)"
+    "nome": "CloudFront Edge PoP (Lima)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Montreal",
@@ -78,7 +118,12 @@
     "latitude": 45.5017,
     "longitude": -73.5673,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Montreal)"
+    "nome": "CloudFront Edge PoP (Montreal)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Toronto",
@@ -87,7 +132,12 @@
     "latitude": 43.6532,
     "longitude": -79.3832,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Toronto)"
+    "nome": "CloudFront Edge PoP (Toronto)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Vancouver",
@@ -96,7 +146,12 @@
     "latitude": 49.2827,
     "longitude": -123.1207,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Vancouver)"
+    "nome": "CloudFront Edge PoP (Vancouver)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Calgary",
@@ -105,7 +160,12 @@
     "latitude": 51.0447,
     "longitude": -114.0719,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Calgary)"
+    "nome": "CloudFront Edge PoP (Calgary)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Cidade do México",
@@ -114,7 +174,12 @@
     "latitude": 19.4326,
     "longitude": -99.1332,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Cidade do México)"
+    "nome": "CloudFront Edge PoP (Cidade do México)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Querétaro",
@@ -123,7 +188,12 @@
     "latitude": 20.5888,
     "longitude": -100.3899,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Querétaro)"
+    "nome": "CloudFront Edge PoP (Querétaro)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Atlanta",
@@ -132,7 +202,12 @@
     "latitude": 33.749,
     "longitude": -84.388,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Atlanta)"
+    "nome": "CloudFront Edge PoP (Atlanta)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Boston",
@@ -141,7 +216,12 @@
     "latitude": 42.3601,
     "longitude": -71.0589,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Boston)"
+    "nome": "CloudFront Edge PoP (Boston)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Chicago",
@@ -150,7 +230,12 @@
     "latitude": 41.8781,
     "longitude": -87.6298,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Chicago)"
+    "nome": "CloudFront Edge PoP (Chicago)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Columbus",
@@ -159,7 +244,12 @@
     "latitude": 39.9612,
     "longitude": -82.9988,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Columbus)"
+    "nome": "CloudFront Edge PoP (Columbus)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Dallas",
@@ -168,7 +258,12 @@
     "latitude": 32.7767,
     "longitude": -96.797,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Dallas)"
+    "nome": "CloudFront Edge PoP (Dallas)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Denver",
@@ -177,7 +272,12 @@
     "latitude": 39.7392,
     "longitude": -104.9903,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Denver)"
+    "nome": "CloudFront Edge PoP (Denver)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Houston",
@@ -186,7 +286,12 @@
     "latitude": 29.7604,
     "longitude": -95.3698,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Houston)"
+    "nome": "CloudFront Edge PoP (Houston)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Kansas City",
@@ -195,7 +300,12 @@
     "latitude": 39.0997,
     "longitude": -94.5786,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Kansas City)"
+    "nome": "CloudFront Edge PoP (Kansas City)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Los Angeles",
@@ -204,7 +314,12 @@
     "latitude": 34.0522,
     "longitude": -118.2437,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Los Angeles)"
+    "nome": "CloudFront Edge PoP (Los Angeles)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Miami",
@@ -213,7 +328,12 @@
     "latitude": 25.7617,
     "longitude": -80.1918,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Miami)"
+    "nome": "CloudFront Edge PoP (Miami)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Minneapolis",
@@ -222,7 +342,12 @@
     "latitude": 44.9778,
     "longitude": -93.265,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Minneapolis)"
+    "nome": "CloudFront Edge PoP (Minneapolis)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Nashville",
@@ -231,7 +356,12 @@
     "latitude": 36.1627,
     "longitude": -86.7816,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Nashville)"
+    "nome": "CloudFront Edge PoP (Nashville)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Newark",
@@ -240,7 +370,12 @@
     "latitude": 40.7357,
     "longitude": -74.1724,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Newark)"
+    "nome": "CloudFront Edge PoP (Newark)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "New York",
@@ -249,7 +384,12 @@
     "latitude": 40.7128,
     "longitude": -74.006,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (New York)"
+    "nome": "CloudFront Edge PoP (New York)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Philadelphia",
@@ -258,7 +398,12 @@
     "latitude": 39.9526,
     "longitude": -75.1652,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Philadelphia)"
+    "nome": "CloudFront Edge PoP (Philadelphia)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Phoenix",
@@ -267,7 +412,12 @@
     "latitude": 33.4484,
     "longitude": -112.074,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Phoenix)"
+    "nome": "CloudFront Edge PoP (Phoenix)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Pittsburgh",
@@ -276,7 +426,12 @@
     "latitude": 40.4406,
     "longitude": -79.9959,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Pittsburgh)"
+    "nome": "CloudFront Edge PoP (Pittsburgh)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Portland",
@@ -285,7 +440,12 @@
     "latitude": 45.5152,
     "longitude": -122.6784,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Portland)"
+    "nome": "CloudFront Edge PoP (Portland)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Salt Lake City",
@@ -294,7 +454,12 @@
     "latitude": 40.7608,
     "longitude": -111.891,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Salt Lake City)"
+    "nome": "CloudFront Edge PoP (Salt Lake City)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "San Francisco",
@@ -303,7 +468,12 @@
     "latitude": 37.7749,
     "longitude": -122.4194,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (San Francisco)"
+    "nome": "CloudFront Edge PoP (San Francisco)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "San Jose",
@@ -312,7 +482,12 @@
     "latitude": 37.3382,
     "longitude": -121.8863,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (San Jose)"
+    "nome": "CloudFront Edge PoP (San Jose)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Seattle",
@@ -321,7 +496,12 @@
     "latitude": 47.6062,
     "longitude": -122.3321,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Seattle)"
+    "nome": "CloudFront Edge PoP (Seattle)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Tampa",
@@ -330,7 +510,12 @@
     "latitude": 27.9506,
     "longitude": -82.4572,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Tampa)"
+    "nome": "CloudFront Edge PoP (Tampa)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Washington D.C.",
@@ -339,7 +524,12 @@
     "latitude": 38.9072,
     "longitude": -77.0369,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Washington D.C.)"
+    "nome": "CloudFront Edge PoP (Washington D.C.)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Amsterdam",
@@ -348,7 +538,12 @@
     "latitude": 52.3676,
     "longitude": 4.9041,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Amsterdam)"
+    "nome": "CloudFront Edge PoP (Amsterdam)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Atenas",
@@ -357,7 +552,12 @@
     "latitude": 37.9838,
     "longitude": 23.7275,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Atenas)"
+    "nome": "CloudFront Edge PoP (Atenas)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Barcelona",
@@ -366,7 +566,12 @@
     "latitude": 41.3851,
     "longitude": 2.1734,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Barcelona)"
+    "nome": "CloudFront Edge PoP (Barcelona)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Berlim",
@@ -375,7 +580,12 @@
     "latitude": 52.52,
     "longitude": 13.405,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Berlim)"
+    "nome": "CloudFront Edge PoP (Berlim)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Bruxelas",
@@ -384,7 +594,12 @@
     "latitude": 50.8503,
     "longitude": 4.3517,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Bruxelas)"
+    "nome": "CloudFront Edge PoP (Bruxelas)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Bucareste",
@@ -393,7 +608,12 @@
     "latitude": 44.4268,
     "longitude": 26.1025,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Bucareste)"
+    "nome": "CloudFront Edge PoP (Bucareste)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Budapeste",
@@ -402,7 +622,12 @@
     "latitude": 47.4979,
     "longitude": 19.0402,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Budapeste)"
+    "nome": "CloudFront Edge PoP (Budapeste)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Copenhague",
@@ -411,7 +636,12 @@
     "latitude": 55.6761,
     "longitude": 12.5683,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Copenhague)"
+    "nome": "CloudFront Edge PoP (Copenhague)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Dublin",
@@ -420,7 +650,12 @@
     "latitude": 53.3498,
     "longitude": -6.2603,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Dublin)"
+    "nome": "CloudFront Edge PoP (Dublin)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Düsseldorf",
@@ -429,7 +664,12 @@
     "latitude": 51.2277,
     "longitude": 6.7735,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Düsseldorf)"
+    "nome": "CloudFront Edge PoP (Düsseldorf)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Estocolmo",
@@ -438,7 +678,12 @@
     "latitude": 59.3293,
     "longitude": 18.0686,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Estocolmo)"
+    "nome": "CloudFront Edge PoP (Estocolmo)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Frankfurt",
@@ -447,7 +692,12 @@
     "latitude": 50.1109,
     "longitude": 8.6821,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Frankfurt)"
+    "nome": "CloudFront Edge PoP (Frankfurt)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Genebra",
@@ -456,7 +706,12 @@
     "latitude": 46.2044,
     "longitude": 6.1432,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Genebra)"
+    "nome": "CloudFront Edge PoP (Genebra)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Hamburgo",
@@ -465,7 +720,12 @@
     "latitude": 53.5511,
     "longitude": 9.9937,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Hamburgo)"
+    "nome": "CloudFront Edge PoP (Hamburgo)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Helsinque",
@@ -474,7 +734,12 @@
     "latitude": 60.1699,
     "longitude": 24.9384,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Helsinque)"
+    "nome": "CloudFront Edge PoP (Helsinque)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Lisboa",
@@ -483,7 +748,12 @@
     "latitude": 38.7223,
     "longitude": -9.1393,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Lisboa)"
+    "nome": "CloudFront Edge PoP (Lisboa)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Londres",
@@ -492,7 +762,12 @@
     "latitude": 51.5074,
     "longitude": -0.1278,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Londres)"
+    "nome": "CloudFront Edge PoP (Londres)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Madrid",
@@ -501,7 +776,12 @@
     "latitude": 40.4168,
     "longitude": -3.7038,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Madrid)"
+    "nome": "CloudFront Edge PoP (Madrid)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Manchester",
@@ -510,7 +790,12 @@
     "latitude": 53.4808,
     "longitude": -2.2426,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Manchester)"
+    "nome": "CloudFront Edge PoP (Manchester)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Marselha",
@@ -519,7 +804,12 @@
     "latitude": 43.2965,
     "longitude": 5.3698,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Marselha)"
+    "nome": "CloudFront Edge PoP (Marselha)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Milão",
@@ -528,7 +818,12 @@
     "latitude": 45.4642,
     "longitude": 9.19,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Milão)"
+    "nome": "CloudFront Edge PoP (Milão)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Munique",
@@ -537,7 +832,12 @@
     "latitude": 48.1351,
     "longitude": 11.582,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Munique)"
+    "nome": "CloudFront Edge PoP (Munique)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Oslo",
@@ -546,7 +846,12 @@
     "latitude": 59.9139,
     "longitude": 10.7522,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Oslo)"
+    "nome": "CloudFront Edge PoP (Oslo)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Palermo",
@@ -555,7 +860,12 @@
     "latitude": 38.1157,
     "longitude": 13.3615,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Palermo)"
+    "nome": "CloudFront Edge PoP (Palermo)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Paris",
@@ -564,7 +874,12 @@
     "latitude": 48.8566,
     "longitude": 2.3522,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Paris)"
+    "nome": "CloudFront Edge PoP (Paris)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Praga",
@@ -573,7 +888,12 @@
     "latitude": 50.0755,
     "longitude": 14.4378,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Praga)"
+    "nome": "CloudFront Edge PoP (Praga)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Roma",
@@ -582,7 +902,12 @@
     "latitude": 41.9028,
     "longitude": 12.4964,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Roma)"
+    "nome": "CloudFront Edge PoP (Roma)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Sófia",
@@ -591,7 +916,12 @@
     "latitude": 42.6977,
     "longitude": 23.3219,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Sófia)"
+    "nome": "CloudFront Edge PoP (Sófia)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Viena",
@@ -600,7 +930,12 @@
     "latitude": 48.2082,
     "longitude": 16.3738,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Viena)"
+    "nome": "CloudFront Edge PoP (Viena)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Varsóvia",
@@ -609,7 +944,12 @@
     "latitude": 52.2297,
     "longitude": 21.0122,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Varsóvia)"
+    "nome": "CloudFront Edge PoP (Varsóvia)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Zagreb",
@@ -618,7 +958,12 @@
     "latitude": 45.815,
     "longitude": 15.9819,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Zagreb)"
+    "nome": "CloudFront Edge PoP (Zagreb)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Zurique",
@@ -627,7 +972,12 @@
     "latitude": 47.3769,
     "longitude": 8.5417,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Zurique)"
+    "nome": "CloudFront Edge PoP (Zurique)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Auckland",
@@ -636,7 +986,12 @@
     "latitude": -36.8485,
     "longitude": 174.7633,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Auckland)"
+    "nome": "CloudFront Edge PoP (Auckland)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Bangkok",
@@ -645,7 +1000,12 @@
     "latitude": 13.7563,
     "longitude": 100.5018,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Bangkok)"
+    "nome": "CloudFront Edge PoP (Bangkok)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Bengaluru",
@@ -654,7 +1014,12 @@
     "latitude": 12.9716,
     "longitude": 77.5946,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Bengaluru)"
+    "nome": "CloudFront Edge PoP (Bengaluru)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Brisbane",
@@ -663,7 +1028,12 @@
     "latitude": -27.4698,
     "longitude": 153.0251,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Brisbane)"
+    "nome": "CloudFront Edge PoP (Brisbane)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Calcutá",
@@ -672,7 +1042,12 @@
     "latitude": 22.5726,
     "longitude": 88.3639,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Calcutá)"
+    "nome": "CloudFront Edge PoP (Calcutá)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Chennai",
@@ -681,7 +1056,12 @@
     "latitude": 13.0827,
     "longitude": 80.2707,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Chennai)"
+    "nome": "CloudFront Edge PoP (Chennai)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Singapura",
@@ -690,7 +1070,12 @@
     "latitude": 1.3521,
     "longitude": 103.8198,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Singapura)"
+    "nome": "CloudFront Edge PoP (Singapura)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Hanói",
@@ -699,7 +1084,12 @@
     "latitude": 21.0285,
     "longitude": 105.8542,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Hanói)"
+    "nome": "CloudFront Edge PoP (Hanói)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Hong Kong",
@@ -708,7 +1098,12 @@
     "latitude": 22.3193,
     "longitude": 114.1694,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Hong Kong)"
+    "nome": "CloudFront Edge PoP (Hong Kong)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Hyderabad",
@@ -717,7 +1112,12 @@
     "latitude": 17.385,
     "longitude": 78.4867,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Hyderabad)"
+    "nome": "CloudFront Edge PoP (Hyderabad)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Jacarta",
@@ -726,7 +1126,12 @@
     "latitude": -6.2088,
     "longitude": 106.8456,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Jacarta)"
+    "nome": "CloudFront Edge PoP (Jacarta)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Kuala Lumpur",
@@ -735,7 +1140,12 @@
     "latitude": 3.139,
     "longitude": 101.6869,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Kuala Lumpur)"
+    "nome": "CloudFront Edge PoP (Kuala Lumpur)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Manila",
@@ -744,7 +1154,12 @@
     "latitude": 14.5995,
     "longitude": 120.9842,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Manila)"
+    "nome": "CloudFront Edge PoP (Manila)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Melbourne",
@@ -753,7 +1168,12 @@
     "latitude": -37.8136,
     "longitude": 144.9631,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Melbourne)"
+    "nome": "CloudFront Edge PoP (Melbourne)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Mumbai",
@@ -762,7 +1182,12 @@
     "latitude": 19.076,
     "longitude": 72.8777,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Mumbai)"
+    "nome": "CloudFront Edge PoP (Mumbai)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Nova Deli",
@@ -771,7 +1196,12 @@
     "latitude": 28.6139,
     "longitude": 77.209,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Nova Deli)"
+    "nome": "CloudFront Edge PoP (Nova Deli)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Osaka",
@@ -780,7 +1210,12 @@
     "latitude": 34.6937,
     "longitude": 135.5023,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Osaka)"
+    "nome": "CloudFront Edge PoP (Osaka)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Perth",
@@ -789,7 +1224,12 @@
     "latitude": -31.9505,
     "longitude": 115.8605,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Perth)"
+    "nome": "CloudFront Edge PoP (Perth)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Pune",
@@ -798,7 +1238,12 @@
     "latitude": 18.5204,
     "longitude": 73.8567,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Pune)"
+    "nome": "CloudFront Edge PoP (Pune)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Saigon (Ho Chi Minh)",
@@ -807,7 +1252,12 @@
     "latitude": 10.8231,
     "longitude": 106.6297,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Saigon (Ho Chi Minh))"
+    "nome": "CloudFront Edge PoP (Saigon (Ho Chi Minh))",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Seul",
@@ -816,7 +1266,12 @@
     "latitude": 37.5665,
     "longitude": 126.978,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Seul)"
+    "nome": "CloudFront Edge PoP (Seul)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Sydney",
@@ -825,7 +1280,12 @@
     "latitude": -33.8688,
     "longitude": 151.2093,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Sydney)"
+    "nome": "CloudFront Edge PoP (Sydney)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Taipei",
@@ -834,7 +1294,12 @@
     "latitude": 25.033,
     "longitude": 121.5654,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Taipei)"
+    "nome": "CloudFront Edge PoP (Taipei)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Tóquio",
@@ -843,7 +1308,12 @@
     "latitude": 35.6762,
     "longitude": 139.6503,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Tóquio)"
+    "nome": "CloudFront Edge PoP (Tóquio)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Abu Dhabi",
@@ -852,7 +1322,12 @@
     "latitude": 24.4539,
     "longitude": 54.3773,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Abu Dhabi)"
+    "nome": "CloudFront Edge PoP (Abu Dhabi)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Cidade do Cabo",
@@ -861,7 +1336,12 @@
     "latitude": -33.9249,
     "longitude": 18.4241,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Cidade do Cabo)"
+    "nome": "CloudFront Edge PoP (Cidade do Cabo)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Doha",
@@ -870,7 +1350,12 @@
     "latitude": 25.2854,
     "longitude": 51.531,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Doha)"
+    "nome": "CloudFront Edge PoP (Doha)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Dubai",
@@ -879,7 +1364,12 @@
     "latitude": 25.2048,
     "longitude": 55.2708,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Dubai)"
+    "nome": "CloudFront Edge PoP (Dubai)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Fujairah",
@@ -888,7 +1378,12 @@
     "latitude": 25.1288,
     "longitude": 56.3265,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Fujairah)"
+    "nome": "CloudFront Edge PoP (Fujairah)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Istambul",
@@ -897,7 +1392,12 @@
     "latitude": 41.0082,
     "longitude": 28.9784,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Istambul)"
+    "nome": "CloudFront Edge PoP (Istambul)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Jeddah",
@@ -906,7 +1406,12 @@
     "latitude": 21.5433,
     "longitude": 39.1728,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Jeddah)"
+    "nome": "CloudFront Edge PoP (Jeddah)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Joanesburgo",
@@ -915,7 +1420,12 @@
     "latitude": -26.2041,
     "longitude": 28.0473,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Joanesburgo)"
+    "nome": "CloudFront Edge PoP (Joanesburgo)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Lagos",
@@ -924,7 +1434,12 @@
     "latitude": 6.5244,
     "longitude": 3.3792,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Lagos)"
+    "nome": "CloudFront Edge PoP (Lagos)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Manama",
@@ -933,7 +1448,12 @@
     "latitude": 26.2285,
     "longitude": 50.586,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Manama)"
+    "nome": "CloudFront Edge PoP (Manama)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Mascate",
@@ -942,7 +1462,12 @@
     "latitude": 23.588,
     "longitude": 58.3829,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Mascate)"
+    "nome": "CloudFront Edge PoP (Mascate)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Nairóbi",
@@ -951,7 +1476,12 @@
     "latitude": -1.2921,
     "longitude": 36.8219,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Nairóbi)"
+    "nome": "CloudFront Edge PoP (Nairóbi)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Riad",
@@ -960,7 +1490,12 @@
     "latitude": 24.7136,
     "longitude": 46.6753,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Riad)"
+    "nome": "CloudFront Edge PoP (Riad)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   },
   {
     "cidade": "Tel Aviv",
@@ -969,6 +1504,11 @@
     "latitude": 32.0853,
     "longitude": 34.7818,
     "tipo": "cloudfront_pop",
-    "nome": "CloudFront Edge PoP (Tel Aviv)"
+    "nome": "CloudFront Edge PoP (Tel Aviv)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "cloudfront_pop",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/cloudfront/features/"
   }
 ]
