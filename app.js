@@ -204,6 +204,13 @@ function mostrarDetalhes(ponto) {
     `${ponto.latitude.toFixed(4)}, ${ponto.longitude.toFixed(4)}`
   ]);
 
+  if (ponto.estadoOperacional) {
+    informacoes.push(["Estado Operacional", ponto.estadoOperacional === "operacional" ? "Operacional (GA)" : ponto.estadoOperacional]);
+  }
+  if (ponto.dataUltimaVerificacao) {
+    informacoes.push(["Última Verificação", ponto.dataUltimaVerificacao]);
+  }
+
   informacoes.forEach(([rotulo, valor]) => {
     const item = document.createElement("div");
     item.className = "detalhes-item";
@@ -240,6 +247,18 @@ function mostrarDetalhes(ponto) {
   }
 
   detalhesRegiao.appendChild(descricao);
+
+  if (ponto.fonteOficial) {
+    const linkDiv = document.createElement("div");
+    linkDiv.className = "detalhes-fonte";
+    const linkA = document.createElement("a");
+    linkA.href = ponto.fonteOficial;
+    linkA.target = "_blank";
+    linkA.rel = "noopener noreferrer";
+    linkA.textContent = "↗ Consultar Documentação Oficial AWS";
+    linkDiv.appendChild(linkA);
+    detalhesRegiao.appendChild(linkDiv);
+  }
 
   // Em telas móveis, rola suavemente para o painel se estiver abaixo do viewport
   if (window.innerWidth <= 768) {

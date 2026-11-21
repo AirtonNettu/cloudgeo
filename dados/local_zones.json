@@ -9,7 +9,13 @@
     "regiaoPaiNome": "US East (N. Virginia)",
     "latitude": 33.749,
     "longitude": -84.388,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "us-east-1-bos-1",
@@ -21,7 +27,13 @@
     "regiaoPaiNome": "US East (N. Virginia)",
     "latitude": 42.3601,
     "longitude": -71.0589,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "us-east-2-chi-1",
@@ -33,7 +45,13 @@
     "regiaoPaiNome": "US East (Ohio)",
     "latitude": 41.8781,
     "longitude": -87.6298,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "us-east-1-dfw-1",
@@ -45,7 +63,13 @@
     "regiaoPaiNome": "US East (N. Virginia)",
     "latitude": 32.7767,
     "longitude": -96.797,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "us-west-2-den-1",
@@ -57,7 +81,13 @@
     "regiaoPaiNome": "US West (Oregon)",
     "latitude": 39.7392,
     "longitude": -104.9903,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "us-east-2-dtw-1",
@@ -69,7 +99,13 @@
     "regiaoPaiNome": "US East (Ohio)",
     "latitude": 42.3314,
     "longitude": -83.0458,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "us-west-2-hnl-1",
@@ -81,7 +117,13 @@
     "regiaoPaiNome": "US West (Oregon)",
     "latitude": 21.3069,
     "longitude": -157.8583,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "us-east-1-iah-1",
@@ -93,7 +135,13 @@
     "regiaoPaiNome": "US East (N. Virginia)",
     "latitude": 29.7604,
     "longitude": -95.3698,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "us-east-2-mci-1",
@@ -105,7 +153,13 @@
     "regiaoPaiNome": "US East (Ohio)",
     "latitude": 39.0997,
     "longitude": -94.5786,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "us-west-2-las-1",
@@ -117,7 +171,13 @@
     "regiaoPaiNome": "US West (Oregon)",
     "latitude": 36.1699,
     "longitude": -115.1398,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "us-west-2-lax-1",
@@ -129,7 +189,13 @@
     "regiaoPaiNome": "US West (Oregon)",
     "latitude": 34.0522,
     "longitude": -118.2437,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "us-east-1-mia-1",
@@ -141,7 +207,13 @@
     "regiaoPaiNome": "US East (N. Virginia)",
     "latitude": 25.7617,
     "longitude": -80.1918,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "us-east-2-msp-1",
@@ -153,7 +225,13 @@
     "regiaoPaiNome": "US East (Ohio)",
     "latitude": 44.9778,
     "longitude": -93.265,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "us-east-1-phl-1",
@@ -165,7 +243,13 @@
     "regiaoPaiNome": "US East (N. Virginia)",
     "latitude": 39.9526,
     "longitude": -75.1652,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "us-west-2-phx-1",
@@ -177,7 +261,13 @@
     "regiaoPaiNome": "US West (Oregon)",
     "latitude": 33.4484,
     "longitude": -112.074,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "us-west-2-pdx-1",
@@ -189,7 +279,13 @@
     "regiaoPaiNome": "US West (Oregon)",
     "latitude": 45.5152,
     "longitude": -122.6784,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "us-west-2-sea-1",
@@ -201,7 +297,13 @@
     "regiaoPaiNome": "US West (Oregon)",
     "latitude": 47.6062,
     "longitude": -122.3321,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "ca-central-1-yto-1",
@@ -213,7 +315,13 @@
     "regiaoPaiNome": "Canada (Central)",
     "latitude": 43.6532,
     "longitude": -79.3832,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "ca-central-1-yvr-1",
@@ -225,7 +333,13 @@
     "regiaoPaiNome": "Canada (Central)",
     "latitude": 49.2827,
     "longitude": -123.1207,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "us-east-1-qro-1",
@@ -237,7 +351,13 @@
     "regiaoPaiNome": "US East (N. Virginia)",
     "latitude": 20.5888,
     "longitude": -100.3899,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "us-east-1-bue-1",
@@ -249,7 +369,13 @@
     "regiaoPaiNome": "US East (N. Virginia)",
     "latitude": -34.6037,
     "longitude": -58.3816,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "us-east-1-scl-1",
@@ -261,7 +387,13 @@
     "regiaoPaiNome": "US East (N. Virginia)",
     "latitude": -33.4489,
     "longitude": -70.6693,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "us-east-1-lim-1",
@@ -273,7 +405,13 @@
     "regiaoPaiNome": "US East (N. Virginia)",
     "latitude": -12.0464,
     "longitude": -77.0428,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "us-east-1-bog-1",
@@ -285,7 +423,13 @@
     "regiaoPaiNome": "US East (N. Virginia)",
     "latitude": 4.711,
     "longitude": -74.0721,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "us-east-1-rio-1",
@@ -297,7 +441,13 @@
     "regiaoPaiNome": "US East (N. Virginia)",
     "latitude": -22.9068,
     "longitude": -43.1729,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "eu-north-1-cph-1",
@@ -309,7 +459,13 @@
     "regiaoPaiNome": "Europe (Stockholm)",
     "latitude": 55.6761,
     "longitude": 12.5683,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "eu-north-1-hel-1",
@@ -321,7 +477,13 @@
     "regiaoPaiNome": "Europe (Stockholm)",
     "latitude": 60.1699,
     "longitude": 24.9384,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "eu-central-1-ham-1",
@@ -333,7 +495,13 @@
     "regiaoPaiNome": "Europe (Frankfurt)",
     "latitude": 53.5511,
     "longitude": 9.9937,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "eu-central-1-muc-1",
@@ -345,7 +513,13 @@
     "regiaoPaiNome": "Europe (Frankfurt)",
     "latitude": 48.1351,
     "longitude": 11.582,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "eu-central-1-waw-1",
@@ -357,7 +531,13 @@
     "regiaoPaiNome": "Europe (Frankfurt)",
     "latitude": 52.2297,
     "longitude": 21.0122,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "eu-central-1-prg-1",
@@ -369,7 +549,13 @@
     "regiaoPaiNome": "Europe (Frankfurt)",
     "latitude": 50.0755,
     "longitude": 14.4378,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "eu-west-1-ams-1",
@@ -381,7 +567,13 @@
     "regiaoPaiNome": "Europe (Ireland)",
     "latitude": 52.3676,
     "longitude": 4.9041,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "eu-west-1-bru-1",
@@ -393,7 +585,13 @@
     "regiaoPaiNome": "Europe (Ireland)",
     "latitude": 50.8503,
     "longitude": 4.3517,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "eu-central-1-vie-1",
@@ -405,7 +603,13 @@
     "regiaoPaiNome": "Europe (Frankfurt)",
     "latitude": 48.2082,
     "longitude": 16.3738,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "eu-south-2-lis-1",
@@ -417,7 +621,13 @@
     "regiaoPaiNome": "Europe (Spain)",
     "latitude": 38.7223,
     "longitude": -9.1393,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "af-south-1-jnb-1",
@@ -429,7 +639,13 @@
     "regiaoPaiNome": "Africa (Cape Town)",
     "latitude": -26.2041,
     "longitude": 28.0473,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "af-south-1-nbo-1",
@@ -441,7 +657,13 @@
     "regiaoPaiNome": "Africa (Cape Town)",
     "latitude": -1.2921,
     "longitude": 36.8219,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "me-south-1-mct-1",
@@ -453,7 +675,13 @@
     "regiaoPaiNome": "Middle East (Bahrain)",
     "latitude": 23.588,
     "longitude": 58.3829,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "ap-northeast-1-tpe-1",
@@ -465,7 +693,13 @@
     "regiaoPaiNome": "Asia Pacific (Tokyo)",
     "latitude": 25.033,
     "longitude": 121.5654,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "ap-south-1-del-1",
@@ -477,7 +711,13 @@
     "regiaoPaiNome": "Asia Pacific (Mumbai)",
     "latitude": 28.6139,
     "longitude": 77.209,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "ap-south-1-ccu-1",
@@ -489,7 +729,13 @@
     "regiaoPaiNome": "Asia Pacific (Mumbai)",
     "latitude": 22.5726,
     "longitude": 88.3639,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "ap-south-1-maa-1",
@@ -501,7 +747,13 @@
     "regiaoPaiNome": "Asia Pacific (Mumbai)",
     "latitude": 13.0827,
     "longitude": 80.2707,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "ap-south-1-blr-1",
@@ -513,7 +765,13 @@
     "regiaoPaiNome": "Asia Pacific (Mumbai)",
     "latitude": 12.9716,
     "longitude": 77.5946,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "ap-southeast-2-akl-1",
@@ -525,7 +783,13 @@
     "regiaoPaiNome": "Asia Pacific (Sydney)",
     "latitude": -36.8485,
     "longitude": 174.7633,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "ap-southeast-1-bkk-1",
@@ -537,7 +801,13 @@
     "regiaoPaiNome": "Asia Pacific (Singapore)",
     "latitude": 13.7563,
     "longitude": 100.5018,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
   },
   {
     "codigo": "ap-southeast-1-mnl-1",
@@ -549,6 +819,66 @@
     "regiaoPaiNome": "Asia Pacific (Singapore)",
     "latitude": 14.5995,
     "longitude": 120.9842,
-    "tipo": "local_zone"
+    "tipo": "local_zone",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
+  },
+  {
+    "codigo": "eu-central-1-ath-1",
+    "nome": "AWS Local Zone (Athens)",
+    "cidade": "Atenas",
+    "pais": "Grécia",
+    "continente": "Europa",
+    "regiaoPai": "eu-central-1",
+    "regiaoPaiNome": "Europe (Frankfurt)",
+    "latitude": 37.9838,
+    "longitude": 23.7275,
+    "tipo": "local_zone",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html",
+    "dataUltimaVerificacao": "2026-11-21",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "versaoEsquema": "2.4"
+  },
+  {
+    "codigo": "eu-central-1-ist-1",
+    "nome": "AWS Local Zone (Istanbul)",
+    "cidade": "Istambul",
+    "pais": "Turquia",
+    "continente": "Europa",
+    "regiaoPai": "eu-central-1",
+    "regiaoPaiNome": "Europe (Frankfurt)",
+    "latitude": 41.0082,
+    "longitude": 28.9784,
+    "tipo": "local_zone",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html",
+    "dataUltimaVerificacao": "2026-11-21",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "versaoEsquema": "2.4"
+  },
+  {
+    "codigo": "ap-southeast-1-han-1",
+    "nome": "AWS Local Zone (Hanoi)",
+    "cidade": "Hanói",
+    "pais": "Vietnã",
+    "continente": "Ásia",
+    "regiaoPai": "ap-southeast-1",
+    "regiaoPaiNome": "Asia Pacific (Singapore)",
+    "latitude": 21.0285,
+    "longitude": 105.8542,
+    "tipo": "local_zone",
+    "fonteOficial": "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html",
+    "dataUltimaVerificacao": "2026-11-21",
+    "estadoOperacional": "operacional",
+    "categoria": "local_zone",
+    "particao": "aws",
+    "versaoEsquema": "2.4"
   }
 ]

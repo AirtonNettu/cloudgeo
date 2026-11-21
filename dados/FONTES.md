@@ -60,7 +60,7 @@ Este documento descreve detalhadamente a metodologia, procedência oficial, data
 ### 2.2 AWS Local Zones (`dados/local_zones.json`)
 * **Definição**: Extensões de uma Região AWS que colocam serviços de computação (EC2), armazenamento (EBS) e banco de dados próximos a grandes centros populacionais e industriais onde não existe uma região tradicional. Seu objetivo principal é fornecer latência de um dígito em milissegundos (< 10 ms) para aplicações locais.
 * **Escopo e Relação com Regiões**: Uma Local Zone depende de uma **Região Pai (Parent Region)** que ancora seu plano de controle e serviços de gerenciamento.
-* **Total Catalogado**: 46 Local Zones distribuídas globalmente (América do Norte, América do Sul, Europa, Ásia e África).
+* **Total Catalogado e Verificado**: **49 Local Zones** distribuídas globalmente (América do Norte, América do Sul, Europa, Ásia e África), incluindo lançamentos verificados de 2026: Atenas (`eu-central-1-ath-1`), Istambul (`eu-central-1-ist-1`) e Hanói (`ap-southeast-1-han-1`).
 * **Fontes Oficiais**:
   * [AWS Local Zones Locations](https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/)
   * [Available Local Zones — AWS Documentation](https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html)
