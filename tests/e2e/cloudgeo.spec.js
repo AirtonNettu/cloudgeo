@@ -121,9 +121,27 @@ test.describe('CloudGeo End-to-End Suite', () => {
     await page.goto('/index.html');
     await expect(page.locator('#regioes-visiveis')).not.toHaveText('0');
 
+    // Registra a promessa de estabilização do mapa (evento moveend do Leaflet)
+    const mapaEstabilizado = page.evaluate(() => {
+      return new Promise((resolve) => {
+        const map = window.mapa;
+        if (!map) return resolve();
+        map.once('moveend', () => resolve());
+        setTimeout(resolve, 2000); // Fallback de segurança determinístico
+      });
+    });
+
     // Filtra para um único ponto para facilitar o clique preciso
     await page.fill('#busca', 'sa-east-1');
-    await page.waitForTimeout(800); // Aguarda estabilização do mapa após fitBounds
+
+    // Aguarda término da animação fitBounds via evento oficial do Leaflet
+    await mapaEstabilizado;
+
+    // Confirma término de qualquer animação residual de zoom
+    await page.waitForFunction(() => {
+      const map = window.mapa;
+      return map && !map._animatingZoom;
+    });
 
     const marker = page.locator('.leaflet-marker-icon').first();
     await expect(marker).toBeVisible({ timeout: 10000 });

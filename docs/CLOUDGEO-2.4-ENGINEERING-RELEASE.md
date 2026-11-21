@@ -19,7 +19,7 @@ A aplicação permanece 100% estática, compatível com a hospedagem no **AWS Am
 | **Cidades com PoPs CloudFront** | 108 Cidades | 108 Cidades (esclarecido: 750+ PoPs físicos) | Métrica contextualizada sem ambiguidade |
 | **Total de Pontos de Infraestrutura** | 193 pontos | 196 pontos | +3 zonas auditadas e verificadas |
 | **Governança dos Catálogos** | Sem metadados de auditoria | `versaoEsquema`, `estadoOperacional`, `fonteOficial`, `dataUltimaVerificacao` | Rastreabilidade e conformidade contínua |
-| **Garantia de Qualidade (QA)** | Testes ad-hoc manuais | Lint + Validador JSON + 9 Testes Unitários + 16 E2E Playwright | Pipeline determinístico automatizado |
+| **Garantia de Qualidade (QA)** | Testes ad-hoc manuais | Lint + Validador JSON + 10 Testes Unitários + 16 E2E Playwright | Pipeline determinístico automatizado |
 | **Pipeline de CI/CD** | Apenas build do Amplify | GitHub Actions (`quality.yml`) com Actions fixadas por SHA | Verificação a cada Push e Pull Request |
 
 ---
@@ -73,21 +73,24 @@ Navegador do Usuário ◄────────────────┴─�
      - Presença de campos obrigatórios (`id`, `nome`, `codigo`, `pais`, `continente`, `lat`, `lng`, etc.).
      - Categorias, continentes, partições e estados operacionais permitidos.
      - Proteção contra Prototype Pollution em propriedades de objeto.
-2. **Testes Unitários (`tests/unit/data-filters.test.js`)**:
-   - 9 testes unitários usando o test runner nativo do Node.js (`node:test` e `node:assert`).
-   - Cobertura completa de filtragem por texto, código de região, continente, camadas ativas/inativas, ordenação alfabética de continentes e cálculos agregados de métricas.
+2. **Testes Unitários Reais (`tests/unit/data-filters.test.js`)**:
+   - 10 testes unitários usando o test runner nativo do Node.js (`node:test` e `node:assert`) exercitando diretamente o módulo de produção `data-filters.js`.
+   - Cobertura completa de filtragem por texto, código de região, continente, camadas ativas/inativas, ordenação alfabética de continentes, cálculos agregados de métricas e tratamento de listas vazias.
 3. **Testes End-to-End (`tests/e2e/cloudgeo.spec.js`)**:
-   - 16 cenários automatizados cobrindo Desktop e Mobile (Chromium):
+   - 16 cenários automatizados cobrindo os projetos Chromium Desktop ('Desktop Chrome', 1280x720) e Chromium Mobile ('Pixel 5', 393x851) configurados no Playwright:
      - Inicialização sem erros de console ou CSP.
-     - Carregamento de catálogos e renderização do dashboard (196 pontos).
+     - Carregamento de catálogos e renderização do dashboard (196 pontos: 39 Regiões, 49 Local Zones, 108 Cidades com PoPs).
      - Busca universal e filtragem por texto.
      - Seleção de continentes no dropdown.
      - Alternância de visibilidade das camadas (Regiões, Local Zones, CloudFront).
      - Restauração de visão global e reset de filtros.
-     - Abertura e preenchimento do painel lateral de detalhes.
+     - Sincronização determinística com o evento `moveend` do Leaflet e abertura do painel de detalhes.
      - Responsividade e usabilidade mobile.
-   - Mocking de tiles de mapa com imagem PNG transparente 1x1, garantindo execução 100% determinística, rápida (11.7s) e sem dependência de rede externa.
-4. **GitHub Actions Workflow (`.github/workflows/quality.yml`)**:
+   - Mocking de tiles de mapa com imagem PNG transparente 1x1, garantindo execução 100% determinística, rápida (17.7s) e sem dependência de rede externa.
+4. **Isolamento de Publicação no AWS Amplify Hosting (`amplify.yml`)**:
+   - Configuração do `amplify.yml` utilizando estritamente a estratégia de **allowlist** no bloco `artifacts.files`.
+   - Apenas os arquivos de produção necessários (`index.html`, `style.css`, `app.js`, `data-filters.js`, `customHttp.yml`, `dados/*.json`, `vendor/**/*` e o SVG da arquitetura) são empacotados, garantindo que testes, scripts internos, `.github/` e `node_modules/` jamais sejam expostos no CDN.
+5. **GitHub Actions Workflow (`.github/workflows/quality.yml`)**:
    - Disparado em `push` e `pull_request` nas branches `main` e `feature/**`.
    - Concorrência configurada com `cancel-in-progress: true` para cancelar builds redundantes.
    - Permissões mínimas (`permissions: contents: read`).

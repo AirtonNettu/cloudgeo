@@ -1,7 +1,7 @@
 # 📊 Relatório de Auditoria e Governança de Dados AWS
 **Data da Auditoria**: 2026-11-21  
 **Versão do Esquema**: 2.4  
-**Status do Endpoint AWS IP Ranges**: Online (SyncToken: 1795282025, CreateDate: 2026-11-21-17-27-05)  
+**Status do Endpoint AWS IP Ranges**: Online (SyncToken: 1795289226, CreateDate: 2026-11-21-19-27-06)  
 
 ---
 
@@ -11,9 +11,9 @@ A auditoria de integridade do CloudGeo 2.4 adota uma metodologia rigorosa de con
 
 | Nível de Verificação | Método de Aferição | Cobertura / Aplicação |
 |---|---|---|
-| **1. Validação Estrutural** | Esquema JSON, tipos, limites de coordenadas geográficas, chaves primárias únicas e prevenção de Prototype Pollution via `scripts/validate-catalogs.js` | **100% dos 196 registros** |
-| **2. Confirmação Técnica por IP Ranges** | Presença ativa no endpoint público `https://ip-ranges.amazonaws.com/ip-ranges.json` (campo `region` e `network_border_group`) | **Regiões comerciais padrão (`aws`) e Local Zones com prefixos de roteamento atribuídos** |
-| **3. Verificação Documental Oficial** | Conferência manual contra a documentação técnica oficial da AWS: *Available Local Zones User Guide*, *AWS Regional Infrastructure Map* e *AWS News Blog* | **Partições isoladas (`aws-us-gov`, `aws-cn`, `aws-eusc`), Local Zones anunciadas e cidades CloudFront** |
+| **1. Validação Estrutural** | Esquema JSON, tipos, limites de coordenadas geográficas, chaves primárias únicas e prevenção de Prototype Pollution via `scripts/validate-catalogs.js` | **100% dos 196 registros auditados** |
+| **2. Verificação Documental Primária** | Tabela oficial *Available Local Zones* (User Guide), mapa global *AWS Local Zones Locations*, *AWS Regional Infrastructure Map* e *AWS News Blog* | **Critério primário para classificação operacional (GA), anunciada e descontinuada** |
+| **3. Telemetria Técnica Auxiliar** | Presença no endpoint público `https://ip-ranges.amazonaws.com/ip-ranges.json` (`region`, `network_border_group` e serviço `CLOUDFRONT`) | **Evidência corroborativa de roteamento ativo (a ausência de prefixos IP NÃO é tomada como prova de indisponibilidade)** |
 
 ---
 
@@ -28,23 +28,25 @@ A auditoria de integridade do CloudGeo 2.4 adota uma metodologia rigorosa de con
   - **AWS European Sovereign Cloud (`aws-eusc` - 1 região)**: `eusc-de-east-1` (Brandemburgo, inaugurada em janeiro de 2026, isolada na UE).
 
 ### 2.2 AWS Local Zones (49 registradas)
-A auditoria independente reconciliou a totalidade dos registros, eliminando afirmações de "100% GA" e diferenciando os estados operacionais factuais:
+A auditoria independente reconciliou a totalidade dos 49 registros com base em documentação oficial primária da AWS, eliminando afirmações genéricas de "100% GA" e diferenciando os estados operacionais factuais:
 
 - **Operacionais / Disponíveis (GA)**: **35 zonas**
-  - Todas listadas formalmente na tabela oficial *Available Local Zones* da AWS.
-  - 35 delas com `network_border_group` ativo diretamente confirmado no AWS IP Ranges (como Atlanta, Boston, Chicago, Dallas, Denver, Los Angeles, Buenos Aires, Santiago, Lima, Bogotá, Copenhague, Helsinque, Hamburgo, Varsóvia, Atenas, Istambul, Hanói, etc.).
+  - **Evidência Documental Primária**: Todas as 35 zonas constam formalmente na tabela oficial *Available Local Zones* do guia de usuário da AWS (https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html) e encontram-se liberadas para ativação (*opt-in*) e provisionamento de instâncias EC2 e volumes EBS.
+  - **Telemetria Auxiliar**: 35 delas possuem `network_border_group` ativo identificado no AWS IP Ranges (ex.: Atlanta, Boston, Chicago, Dallas, Denver, Los Angeles, Buenos Aires, Santiago, Lima, Bogotá, Copenhague, Helsinque, Hamburgo, Varsóvia, Atenas, Istambul, Hanói, etc.). *Ressalta-se que a presença em IP Ranges é apenas confirmatória; a classificação decorre da disponibilidade documental e operacional.*
 - **Anunciadas / Expansão em Planejamento**: **13 zonas**
-  - Anunciadas formalmente pela AWS no mapa global de Local Zones (*Coming Soon / Announced*), mas ainda não ativas em GA:
-  - *Américas*: Rio de Janeiro (`us-east-1-rio-1`), Toronto (`ca-central-1-yto-1`), Vancouver (`ca-central-1-yvr-1`).
-  - *Europa*: Munique (`eu-central-1-muc-1`), Praga (`eu-central-1-prg-1`), Amsterdam (`eu-west-1-ams-1`), Bruxelas (`eu-west-1-bru-1`), Viena (`eu-central-1-vie-1`), Lisboa (`eu-south-2-lis-1`).
-  - *África*: Joanesburgo (`af-south-1-jnb-1`), Nairóbi (`af-south-1-nbo-1`).
-  - *Ásia*: Chennai (`ap-south-1-maa-1`), Bengaluru (`ap-south-1-blr-1`).
+  - **Evidência Documental Primária**: Listadas expressamente pela AWS na seção *Announced Local Zones / Coming Soon* do mapa de infraestrutura global (https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/) e ausentes da tabela *Available Local Zones*, não estando ainda disponíveis para *opt-in* por clientes:
+  - *Américas (3)*: Rio de Janeiro (`us-east-1-rio-1`), Toronto (`ca-central-1-yto-1`), Vancouver (`ca-central-1-yvr-1`).
+  - *Europa (6)*: Munique (`eu-central-1-muc-1`), Praga (`eu-central-1-prg-1`), Amsterdam (`eu-west-1-ams-1`), Bruxelas (`eu-west-1-bru-1`), Viena (`eu-central-1-vie-1`), Lisboa (`eu-south-2-lis-1`).
+  - *África (2)*: Joanesburgo (`af-south-1-jnb-1`), Nairóbi (`af-south-1-nbo-1`).
+  - *Ásia (2)*: Chennai (`ap-south-1-maa-1`), Bengaluru (`ap-south-1-blr-1`).
+  - *Nota Metodológica*: O status de "anunciado" fundamenta-se na documentação oficial de planejamento da AWS, e não na ausência de prefixos IP (a ausência de prefixos nunca é usada como critério de indisponibilidade).
 - **Reclassificadas / Descontinuadas como Local Zone**: **1 zona**
-  - Detroit: Mapeada historicamente, porém identificada documentalmente como infraestrutura atendida por **AWS Wavelength** (`us-east-1-wl1-dtw-wlz-1`), não figurando no catálogo oficial de Local Zones. Mantida com estado operacional `descontinuado` para rastreabilidade histórica.
+  - **Evidência Documental Primária**: Detroit não consta na lista de Available ou Announced Local Zones da AWS. Documentada oficialmente pela AWS como zona **AWS Wavelength** (`us-east-1-wl1-dtw-wlz-1`) integrada à rede 5G da Verizon (https://aws.amazon.com/wavelength/features/locations/). O registro é preservado com estado operacional `descontinuado` para rastreabilidade histórica e prevenção de reintrodução indevida.
 
-### 2.3 CloudFront Points of Presence (108 cidades sedes)
-- **Esclarecimento Métrico**: O catálogo documenta **108 cidades metropolitanas mundiais com infraestrutura de borda**, e não a contagem de pontos de presença físicos (a AWS opera **mais de 750+ PoPs físicos e Edge Caches** consolidados globalmente).
-- **Evidência**: Presença do serviço global `CLOUDFRONT` confirmada no AWS IP Ranges.
+### 2.3 CloudFront Points of Presence (108 cidades sedes catalogadas)
+- **Reconciliação Métrica Factual**: O catálogo documenta exatamente **108 cidades metropolitanas mundiais com Edge Locations / PoPs do CloudFront** (e NÃO 39, número que representava as Regiões AWS).
+- **Esclarecimento de Escopo**: Essas 108 cidades abrigam a infraestrutura física de **mais de 750+ PoPs e Edge Caches** operados globalmente pela AWS, atendendo conjuntamente o Amazon CloudFront e o Amazon Route 53.
+- **Evidência**: Presença do serviço global `CLOUDFRONT` confirmada no AWS IP Ranges e na página oficial de features do CloudFront (https://aws.amazon.com/cloudfront/features/).
 
 ---
 

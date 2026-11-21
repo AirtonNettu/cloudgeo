@@ -19,6 +19,9 @@ const mapa = L.map("mapa", {
   maxZoom: 18,
   worldCopyJump: true
 });
+if (typeof window !== "undefined") {
+  window.mapa = mapa;
+}
 
 L.tileLayer(
   "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
