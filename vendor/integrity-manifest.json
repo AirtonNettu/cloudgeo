@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-11-21T19:53:00Z",
+  "libraries": {
+    "leaflet": {
+      "name": "Leaflet",
+      "version": "1.9.4",
+      "license": "BSD-2-Clause",
+      "homepage": "https://leafletjs.com/"
+    },
+    "leaflet.markercluster": {
+      "name": "Leaflet.markercluster",
+      "version": "1.5.3",
+      "license": "MIT",
+      "homepage": "https://github.com/Leaflet/Leaflet.markercluster"
+    }
+  },
+  "files": {
+    "vendor/leaflet/leaflet.css": {
+      "sourceUrl": "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
+      "sizeBytes": 14806,
+      "sha384": "sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H",
+      "sha256": "sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    },
+    "vendor/leaflet/leaflet.js": {
+      "sourceUrl": "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
+      "sizeBytes": 147552,
+      "sha384": "sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH",
+      "sha256": "sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    },
+    "vendor/leaflet/images/marker-icon.png": {
+      "sourceUrl": "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
+      "sizeBytes": 1466,
+      "sha384": "sha384-wg83fCOXjBtqzFAWhTL9Sd9vmLUNhfEEzfmNUX9zwv2igKlz/YQbdapF4ObdxF+R",
+      "sha256": "sha256-V0w6XMqF9BFAhbaEFZbWLwDXyJLHsD8oy/owHesdxDc="
+    },
+    "vendor/leaflet/images/marker-icon-2x.png": {
+      "sourceUrl": "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
+      "sizeBytes": 2464,
+      "sha384": "sha384-bDEa1RhAAKIr/VQnMZ7gUhhXwmKYB4V0g8AsxOvCEPwGxfHCUEzAEMAEEzkjuxiA",
+      "sha256": "sha256-ABecTB7oMNOhCEEq4NKU9Vd2z+sIXGASmjmqb8SuJSg="
+    },
+    "vendor/leaflet/images/marker-shadow.png": {
+      "sourceUrl": "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+      "sizeBytes": 618,
+      "sha384": "sha384-dB8ivfvPGb1MSIzX8oWTakCxmq+VwqP/QL1TX4jT4INR3pM5T4FgF3Gx4mN3NTMq",
+      "sha256": "sha256-Jk9cZAM58ELdcpBiz8BMF/jqDymIK1OOOEjtjxDttNo="
+    },
+    "vendor/leaflet/images/layers.png": {
+      "sourceUrl": "https://unpkg.com/leaflet@1.9.4/dist/images/layers.png",
+      "sizeBytes": 696,
+      "sha384": "sha384-80x85ZS+G189o0xL8E8D7BnfhuNss6EwUPHzG7e+qByRD2xnpxikZ6UQU4Re5nNy",
+      "sha256": "sha256-Hbvp0CjikvNvy6j4s6KNXokydU/CIVuaxp5M3s9RB8Y="
+    },
+    "vendor/leaflet/images/layers-2x.png": {
+      "sourceUrl": "https://unpkg.com/leaflet@1.9.4/dist/images/layers-2x.png",
+      "sizeBytes": 1259,
+      "sha384": "sha384-+F2ZWK/HTpkV9kN2HnMGCQOTM/cnQJLs770FLOeHznwVWRfDESI8z4JwcGYmy2Au",
+      "sha256": "sha256-Bm2sqFDY/77wB68AsG6sABVyje4nnFHzy2xxbffELt8="
+    },
+    "vendor/leaflet/LICENSE": {
+      "sourceUrl": "https://raw.githubusercontent.com/Leaflet/Leaflet/v1.9.4/LICENSE",
+      "sizeBytes": 1395,
+      "sha384": "sha384-CXYK4I2izUBQWizu8sKhYyBLtabBOMnWJhiEcYE2hnY+ov3P+/NGnAkucH4hN0hK",
+      "sha256": "sha256-U+jcJYYgFOQyR0HKGPvjYR4R1C72n1n4bqjFOJZH1Ms="
+    },
+    "vendor/markercluster/MarkerCluster.css": {
+      "sourceUrl": "https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css",
+      "sizeBytes": 872,
+      "sha384": "sha384-pmjIAcz2bAn0xukfxADbZIb3t8oRT9Sv0rvO+BR5Csr6Dhqq+nZs59P0pPKQJkEV",
+      "sha256": "sha256-YU3qCpj/P06tdPBJGPax0bm6Q1wltfwjsho5TR4+TYc="
+    },
+    "vendor/markercluster/MarkerCluster.Default.css": {
+      "sourceUrl": "https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css",
+      "sizeBytes": 1287,
+      "sha384": "sha384-wgw+aLYNQ7dlhK47ZPK7FRACiq7ROZwgFNg0m04avm4CaXS+Z9Y7nMu8yNjBKYC+",
+      "sha256": "sha256-YSWCMtmNZNwqex4CEw1nQhvFub2lmU7vcCKP+XVwwXA="
+    },
+    "vendor/markercluster/leaflet.markercluster.js": {
+      "sourceUrl": "https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js",
+      "sizeBytes": 34136,
+      "sha384": "sha384-eXVCORTRlv4FUUgS/xmOyr66XBVraen8ATNLMESp92FKXLAMiKkerixTiBvXriZr",
+      "sha256": "sha256-Hk4dIpcqOSb0hZjgyvFOP+cEmDXUKKNE/tT542ZbNQg="
+    },
+    "vendor/markercluster/LICENSE": {
+      "sourceUrl": "https://raw.githubusercontent.com/Leaflet/Leaflet.markercluster/master/MIT-LICENCE.txt",
+      "sizeBytes": 1078,
+      "sha384": "sha384-G+dS2R3nPz+8SBoedxcSMEFhiUQO6X0GFa2lRQRBuBo3TUmrhFiZHQovydn8z9+h",
+      "sha256": "sha256-yCi5sDl653qfC4H/CvTC/sURZehsjb1hPuYnRDeLOKQ="
+    }
+  }
+}

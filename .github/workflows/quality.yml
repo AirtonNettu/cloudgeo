@@ -34,6 +34,9 @@ jobs:
       - name: Syntax and Lint validation
         run: npm run lint:js
 
+      - name: Verify vendor dependencies integrity
+        run: npm run verify:vendor
+
       - name: Structural catalog integrity audit
         run: npm run validate:catalogs
 
