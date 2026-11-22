@@ -1,0 +1,5 @@
+# Ensure consistent line endings across all platforms
+* text=auto eol=lf
+
+# Keep vendor files as exact binary byte-for-byte to prevent any line ending transformation
+vendor/** -text

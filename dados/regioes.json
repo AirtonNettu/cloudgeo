@@ -13,7 +13,12 @@
     "particao": "aws-us-gov",
     "tipoRegiao": "AWS GovCloud",
     "operador": "Amazon Web Services (AWS)",
-    "descricaoEscopo": "Partição isolada desenvolvida exclusivamente para atender a cargas de trabalho regulamentadas do governo dos EUA e clientes com conformidade rigorosa (FedRAMP High, ITAR, DoD SRG Levels 4-5)."
+    "descricaoEscopo": "Partição isolada desenvolvida exclusivamente para atender a cargas de trabalho regulamentadas do governo dos EUA e clientes com conformidade rigorosa (FedRAMP High, ITAR, DoD SRG Levels 4-5).",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/govcloud-us/"
   },
   {
     "codigo": "us-gov-west-1",
@@ -29,7 +34,12 @@
     "particao": "aws-us-gov",
     "tipoRegiao": "AWS GovCloud",
     "operador": "Amazon Web Services (AWS)",
-    "descricaoEscopo": "Primeira região isolada da partição GovCloud nos EUA, voltada para conformidade rigorosa e segurança governamental."
+    "descricaoEscopo": "Primeira região isolada da partição GovCloud nos EUA, voltada para conformidade rigorosa e segurança governamental.",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/govcloud-us/"
   },
   {
     "codigo": "ca-central-1",
@@ -44,7 +54,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "ca-west-1",
@@ -59,7 +74,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "mx-central-1",
@@ -74,7 +94,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "us-east-1",
@@ -89,7 +114,12 @@
     "zonasDisponibilidade": 6,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "us-east-2",
@@ -104,7 +134,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "us-west-1",
@@ -119,7 +154,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "us-west-2",
@@ -134,7 +174,12 @@
     "zonasDisponibilidade": 4,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "sa-east-1",
@@ -149,7 +194,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "eusc-de-east-1",
@@ -165,7 +215,12 @@
     "particao": "aws-eusc",
     "tipoRegiao": "AWS European Sovereign Cloud",
     "operador": "AWS European Sovereign Cloud (operada exclusivamente por residentes na UE)",
-    "descricaoEscopo": "Primeira região da partição independente AWS European Sovereign Cloud, localizada em Brandemburgo, Alemanha. Totalmente isolada da partição global comercial, projetada para atender a exigências rigorosas de soberania digital, privacidade e residência de dados da União Europeia (GDPR, Schrems II)."
+    "descricaoEscopo": "Primeira região da partição independente AWS European Sovereign Cloud, localizada em Brandemburgo, Alemanha. Totalmente isolada da partição global comercial, projetada para atender a exigências rigorosas de soberania digital, privacidade e residência de dados da União Europeia (GDPR, Schrems II).",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/compliance/european-sovereign-cloud/"
   },
   {
     "codigo": "eu-central-1",
@@ -180,7 +235,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "eu-west-1",
@@ -195,7 +255,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "eu-west-2",
@@ -210,7 +275,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "eu-south-1",
@@ -225,7 +295,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "eu-west-3",
@@ -240,7 +315,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "eu-south-2",
@@ -255,7 +335,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "eu-north-1",
@@ -270,7 +355,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "eu-central-2",
@@ -285,7 +375,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "ap-southeast-4",
@@ -300,7 +395,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "ap-southeast-6",
@@ -316,7 +416,12 @@
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
     "operador": "Amazon Web Services (AWS)",
-    "descricaoEscopo": "Região comercial padrão na Oceania inaugurada em 2025 em Auckland, com três Zonas de Disponibilidade para atendimento a cargas de trabalho locais e soberania de dados na Nova Zelândia."
+    "descricaoEscopo": "Região comercial padrão na Oceania inaugurada em 2025 em Auckland, com três Zonas de Disponibilidade para atendimento a cargas de trabalho locais e soberania de dados na Nova Zelândia.",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "ap-southeast-2",
@@ -331,7 +436,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "af-south-1",
@@ -346,7 +456,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "ap-east-1",
@@ -361,7 +476,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "ap-south-2",
@@ -376,7 +496,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "ap-southeast-3",
@@ -391,7 +516,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "ap-southeast-5",
@@ -406,7 +536,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "ap-south-1",
@@ -421,7 +556,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "ap-northeast-3",
@@ -436,7 +576,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "ap-northeast-2",
@@ -451,7 +596,12 @@
     "zonasDisponibilidade": 4,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "ap-southeast-1",
@@ -466,7 +616,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "ap-east-2",
@@ -482,7 +637,12 @@
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
     "operador": "Amazon Web Services (AWS)",
-    "descricaoEscopo": "Região comercial padrão na Ásia-Pacífico inaugurada em 2025, fornecendo três Zonas de Disponibilidade e latência ultrabaixa para organizações e desenvolvedores em Taiwan."
+    "descricaoEscopo": "Região comercial padrão na Ásia-Pacífico inaugurada em 2025, fornecendo três Zonas de Disponibilidade e latência ultrabaixa para organizações e desenvolvedores em Taiwan.",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "ap-southeast-7",
@@ -497,7 +657,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "ap-northeast-1",
@@ -512,7 +677,12 @@
     "zonasDisponibilidade": 4,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "cn-north-1",
@@ -528,7 +698,12 @@
     "particao": "aws-cn",
     "tipoRegiao": "AWS China",
     "operador": "Beijing Sinnet Technology Co., Ltd. (Sinnet)",
-    "descricaoEscopo": "Partição geograficamente isolada na China para conformidade legal e regulatória local. Operada pela parceira licenciada Sinnet, com contas e credenciais exclusivas separadas da partição global da AWS."
+    "descricaoEscopo": "Partição geograficamente isolada na China para conformidade legal e regulatória local. Operada pela parceira licenciada Sinnet, com contas e credenciais exclusivas separadas da partição global da AWS.",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://www.amazonaws.cn/en/about-aws/china/"
   },
   {
     "codigo": "cn-northwest-1",
@@ -544,7 +719,12 @@
     "particao": "aws-cn",
     "tipoRegiao": "AWS China",
     "operador": "Ningxia Western Advanced Data Technology Co., Ltd. (NWCD)",
-    "descricaoEscopo": "Segunda região na partição isolada da China, operada pela parceira NWCD para fornecer computação e armazenamento com conformidade regulatória chinesa."
+    "descricaoEscopo": "Segunda região na partição isolada da China, operada pela parceira NWCD para fornecer computação e armazenamento com conformidade regulatória chinesa.",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://www.amazonaws.cn/en/about-aws/china/"
   },
   {
     "codigo": "il-central-1",
@@ -559,7 +739,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "me-south-1",
@@ -574,7 +759,12 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   },
   {
     "codigo": "me-central-1",
@@ -589,6 +779,11 @@
     "zonasDisponibilidade": 3,
     "particao": "aws",
     "tipoRegiao": "Comercial Padrão",
-    "operador": "Amazon Web Services (AWS)"
+    "operador": "Amazon Web Services (AWS)",
+    "versaoEsquema": "2.4",
+    "estadoOperacional": "operacional",
+    "categoria": "regiao",
+    "dataUltimaVerificacao": "2026-11-21",
+    "fonteOficial": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
   }
 ]
